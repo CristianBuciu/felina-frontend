@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chokidar": "^3.0.2",
     "cloudinary-react": "^1.6.7",
     "firebase": "^7.24.0",
     "gsap": "^3.5.1",
