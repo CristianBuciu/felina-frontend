@@ -1,0 +1,73 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+.cart-item-container {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $color-grey-dark;
+  width: 100%;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 0.75rem;
+
+  &__image {
+    width: 30%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  &__details {
+    &--title {
+      @include item-text;
+      font-weight: 400;
+    }
+    &--size-quantity-price {
+      color: $color-grey-dark;
+      font-size: 1.6rem;
+    }
+    &--span-size {
+      font-family: $font-headers;
+      font-weight: 600;
+      color: $color-grey-dark2;
+    }
+    &--greyed {
+      font-family: $font-writting;
+      font-weight: 600;
+      color: $color-grey-dark;
+    }
+    &--span-price {
+      font-family: $font-headers;
+      color: $color-black;
+      font-size: 1.8rem;
+      letter-spacing: 0.15rem;
+    }
+    &__total {
+      margin-bottom: 0;
+      font-size: 1.8rem !important;
+    }
+  }
+  &__delete-btn {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: $color-black;
+    transition: all 0.2s ease;
+    &:hover {
+      color: white;
+      background-color: $color-black;
+    }
+    &--text {
+      font-family: $font-headers;
+      font-size: 1.6rem;
+      margin-left: 0.5rem;
+      font-weight: 400;
+    }
+  }
+}

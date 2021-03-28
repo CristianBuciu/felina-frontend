@@ -1,0 +1,94 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+.sidebar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar-button {
+  height: 5.5rem;
+  width: 5.5rem;
+  position: absolute;
+  top: 4.2rem;
+  left: 3rem;
+  display: none;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    display: flex;
+  }
+
+  &__menu-top {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav-menu {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    padding-left: 12rem;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: calc(3rem + #{$navbar-height-mobile});
+    left: -100%;
+  }
+  display: none;
+
+  transition: all 0.4s ease-in-out;
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 50%;
+  }
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.nav-text {
+  font-size: 8rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 6rem;
+  text-decoration: none;
+  color: $color-grey-dark;
+  width: 95%;
+  height: 100%;
+
+  padding: 0.5rem 1.5rem;
+
+  border-bottom: 2px solid rgba(170, 170, 170, 0.8);
+}
+
+.list-item {
+  list-style: none;
+  width: 100%;
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16rem;
+}
+.hamburger-react-style {
+  width: 100%;
+  height: 100%;
+}

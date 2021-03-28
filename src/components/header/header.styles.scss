@@ -1,0 +1,239 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
+.app-header {
+  font-family: $font-headers;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navbar-height-desktop;
+  color: $color-black;
+  background-color: $color-white;
+}
+.header {
+  background-color: white;
+  height: 100%;
+  &__logo-flex {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__top-links {
+    padding: 0 5rem;
+
+    color: $is-active;
+    border-top: 1px solid $color-border;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $top-navbar-desktop;
+    font-family: $font-writting;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      top: $navbar-height-mobile;
+      font-size: 1.5rem;
+    }
+
+    &--text {
+      font-family: $font-writting;
+
+      text-align: center;
+      width: 50%;
+      letter-spacing: 0.15rem;
+      font-weight: 600;
+    }
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    @include flex-center;
+    height: 14rem;
+  }
+
+  &__slogan {
+    font-size: 1.25rem;
+    letter-spacing: 1.4px;
+    font-family: $font-special;
+    font-weight: 700;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      font-size: 2.5rem;
+
+      letter-spacing: 0.1rem;
+    }
+  }
+  //? =============================================================================
+  //? Logo
+  //? =============================================================================
+  &__logo {
+    height: 7rem;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      width: auto;
+      height: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    //? =============================================================================
+    //?  Title
+    //? =============================================================================
+    &-title {
+      font-family: $font-special;
+      color: $color-black;
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+        display: none;
+      }
+    }
+  }
+
+  &__logo-container {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 1rem 5rem;
+    height: 9rem;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      width: 50%;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  //? =============================================================================
+  //? Header Links
+  //? =============================================================================
+  &__options-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+    border-top: 1px solid $color-border;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      display: none;
+      width: 0;
+    }
+  }
+
+  &__options-links {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    cursor: pointer;
+    color: $color-black;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+
+    margin-bottom: -1.5px;
+    height: calc(100% + 2px);
+    transition: all 0.1s ease;
+    border-top: 2px solid transparent;
+    &:hover {
+      text-decoration: none;
+      color: $color-black;
+      border-top: 2px solid $color-grey-light;
+    }
+  }
+  &__icons-container {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      width: 50%;
+    }
+    &--close {
+      margin: 0;
+      font-weight: 600;
+      color: $color-black;
+      transition: all 0.2s linear;
+      &:hover {
+        letter-spacing: 1px;
+        color: $color-grey-dark;
+      }
+    }
+  }
+  &__icon-link {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    }
+    text-decoration: none;
+    color: $color-black;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-grey-dark !important;
+    }
+  }
+}
+
+.is-active {
+  border-top: 2px solid $color-black;
+  transition: all 0.1s ease;
+}
+.is-active2 {
+  color: $color-black;
+}
+
+.welcome-text-sub {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.icons {
+  font-size: 2.4rem;
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: 5rem;
+    margin-left: 4rem;
+  }
+}
+
+.header__options-links__gifts {
+  color: $imperial-red !important;
+  &:hover {
+    color: $is-active !important;
+    border-top: 2px solid $is-active !important;
+  }
+  &.is-active {
+    color: $is-active !important;
+    border-top: 2px solid $is-active !important;
+  }
+}
+
+#header__alert {
+  font-size: 1.6rem;
+}

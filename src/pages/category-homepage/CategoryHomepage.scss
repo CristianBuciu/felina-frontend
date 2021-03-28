@@ -1,0 +1,36 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.category-section {
+  max-width: $width-general;
+  position: relative;
+
+  margin: 0rem auto;
+  padding-top: 4rem;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    margin-top: 17rem;
+  }
+}
+
+.categories-flex {
+  padding: 0.5rem;
+  background: $color-border;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: calc(#{$navbar-height-desktop});
+  left: 0;
+  font-size: 1.6rem;
+  color: $color-grey-dark2;
+  height: 4rem;
+
+  @include flex-center;
+}
+.directory-menu {
+  &__intro {
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    height: calc(100% - 2rem);
+  }
+}

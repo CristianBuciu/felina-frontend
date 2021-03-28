@@ -1,0 +1,111 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.cart-dropdown {
+  position: fixed;
+
+  @include soft-shadow;
+  background-color: $color-white;
+  top: calc(#{$top-navbar-desktop} + 0.5rem);
+  right: 5rem;
+  width: 42rem;
+  max-height: 66rem;
+  padding: 2rem;
+  z-index: 100000;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    top: 14rem;
+    width: 64rem;
+    max-height: 96rem;
+  }
+
+  &__items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &--close {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__icon {
+        font-size: 2.4rem;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          transform: rotate(180deg);
+          color: $is-active;
+        }
+      }
+    }
+    &--header {
+      text-transform: uppercase;
+      font-family: $font-headers;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      text-align: center;
+      padding-bottom: 0.5rem;
+      color: $color-grey-dark;
+      border-bottom: 1px solid $color-grey-dark;
+    }
+    &--subtotal {
+      padding-top: 0.5rem;
+
+      font-family: $font-writting;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      color: $color-black;
+      margin-bottom: 2rem;
+
+      &__price {
+        font-family: $font-headers;
+        color: $color-black;
+        letter-spacing: 0.15rem;
+        font-weight: 800;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__button {
+    @include custom-btn;
+
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      font-size: $button-font-mobile;
+      padding: $button-padding-mobile;
+    }
+  }
+  &__empty {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &--title {
+      font-family: $font-special;
+      text-align: center;
+      font-weight: 800;
+    }
+    &--icon {
+      font-size: 10rem;
+      color: rgba($color: #000000, $alpha: 0.05);
+      position: absolute;
+      top: -150%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

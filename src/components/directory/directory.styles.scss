@@ -1,0 +1,93 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.directory-menu {
+  width: 100%;
+  height: calc(100vh - #{$navbar-height-desktop} - 4rem);
+  padding: $page-padding;
+
+  &--grey {
+    width: 100%;
+    height: 4rem;
+  }
+  &__top-part {
+    height: 98%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--image {
+      width: 33.33%;
+      height: 100%;
+      object-fit: cover;
+
+      &__women {
+        object-position: 22% top;
+      }
+      &__man {
+        object-position: 83% top;
+      }
+      &__kids {
+        object-position: 60% 20%;
+      }
+      &__gifts {
+        object-position: left center;
+      }
+    }
+    &--central-part {
+      border-top: 1px solid rgb(235, 235, 235);
+      border-bottom: 1px solid rgb(235, 235, 235);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 33.3%;
+      height: 100%;
+      background-color: $color-border;
+      &__logo {
+        width: 10rem;
+      }
+      &__text {
+        color: $color-black;
+        margin-top: 2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: $font-special;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 2;
+      }
+      &--buttons-container {
+        width: 100%;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__button {
+          @include custom-btn;
+          width: 20rem;
+          text-align: center;
+        }
+      }
+    }
+    &__lower {
+      width: 100%;
+      height: 15%;
+      margin-top: 8rem;
+      &--title {
+        font-style: italic;
+        text-align: center;
+        margin-top: 2rem;
+        color: $color-grey-dark2;
+        font-weight: 400;
+        &__logo {
+          font-size: 5rem;
+          font-weight: 600;
+          margin-bottom: 2rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

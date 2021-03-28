@@ -1,0 +1,195 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &--inner {
+    padding: 2rem;
+    width: 80%;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      width: 95vw;
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 5rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+.form-input-field {
+  margin-top: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.form-label {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    font-size: 4rem;
+  }
+  font-family: $font-writting;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0rem);
+}
+
+.form-title {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    font-size: 5rem;
+  }
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: $color-black;
+  letter-spacing: 1.5px;
+
+  &--sub {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      font-size: 3rem;
+    }
+    font-size: 2rem;
+    text-align: center;
+    color: $color-grey-dark2;
+    font-family: $font-writting;
+  }
+}
+.signin--input {
+  background-color: inherit;
+
+  padding-top: 2rem;
+  height: 6rem;
+  width: 100%;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 2px solid $color-border;
+  transition: all 1s ease;
+  transform-origin: left;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    font-size: 4rem;
+    height: 12rem;
+  }
+
+  &:invalid {
+    color: rgb(255, 0, 0);
+  }
+  &:active {
+    outline: none;
+    border-bottom: 2px solid $color-black;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.form-label-content {
+  position: absolute;
+  bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.signin--input:focus .form-label-content {
+  padding: 4rem;
+}
+
+.form-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid $color-black;
+  transition: all 0.5s ease;
+  transform: translateX(-100%);
+}
+
+.form input:focus + .form-label .form-label-content,
+.form input:not(:placeholder-shown) + .form-label .form-label-content {
+  transform: translateY(-3rem) translateX(2rem) scale(0.8);
+  color: $color-black;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    transform: translateY(-7rem) translateX(2rem) scale(0.9);
+  }
+}
+
+.form input:focus + .form-label::after,
+.form input:not(:placeholder-shown) + .form-label::after {
+  transform: translateX(0);
+}
+
+.submit-btn {
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: $button-font-mobile;
+    padding: $button-padding-mobile;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+.signin-btn {
+  @include custom-btn;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &:active {
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.form-flex {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    margin-top: 6rem;
+  }
+}
+
+.google-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+.google-btn {
+  align-self: flex-start;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid $color-border;
+
+  width: 4rem;
+  height: 4rem;
+}
+
+.signup-btn {
+  @include custom-btn;
+}

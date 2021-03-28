@@ -1,0 +1,243 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.category-directory-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba($color: #000000, $alpha: 0.85);
+  backdrop-filter: blur(2rem);
+  z-index: 100000;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  }
+}
+.category-directory-modal {
+  padding: 2rem;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90rem;
+  height: auto;
+  background: white;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  @include soft-shadow;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    top: 1rem;
+    width: 98vw;
+    padding: 3rem;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--title {
+      @include item-text;
+      font-size: 2.2rem;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1rem;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        font-size: 3.8rem;
+      }
+      &__main {
+        color: $color-grey-dark2;
+        border-bottom: 2px solid $color-border;
+      }
+      &__price {
+        font-family: $font-headers;
+        font-weight: 400;
+        color: $color-black;
+        font-size: 2.5rem;
+        font-weight: bold;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+          font-size: 3rem;
+        }
+      }
+      &__vat {
+        color: $color-grey-dark;
+        font-size: 2rem;
+      }
+    }
+    &--close {
+      color: $color-black;
+      font-size: 3rem;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s ease-in-out;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        font-size: 8rem;
+      }
+      &:hover {
+        transform: rotate(180deg);
+        color: $is-active;
+      }
+    }
+  }
+  &__body {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      height: fit-content;
+      flex-direction: column;
+    }
+  }
+  &__description {
+    &--text {
+      font-family: $font-writting;
+      font-size: 1.6rem;
+    }
+    font-size: 2rem;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      font-size: 3.5rem;
+    }
+    &--title {
+      font-size: 2rem;
+      color: $color-black;
+      letter-spacing: 0.2rem;
+      font-weight: 600;
+      text-align: center;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        font-size: 3.5rem;
+      }
+      &__size {
+        text-align: center;
+        margin-top: 4rem;
+      }
+    }
+    &--button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    &--button {
+      font-family: $font-buttons;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      cursor: pointer;
+      width: 4rem;
+      height: 4rem;
+      border: 2px solid $color-border;
+      background-color: white;
+      transition: all 0.2s ease-in-out;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        margin-right: 2rem;
+        width: 8rem;
+        height: 8rem;
+        font-size: 3.5rem;
+      }
+
+      &:hover {
+        border: 1px solid $color-black;
+        background-color: $color-black;
+        color: white;
+      }
+      &__active {
+        border: 1px solid $color-black;
+        background-color: $color-black;
+        color: white;
+      }
+    }
+
+    &--input {
+      display: none;
+    }
+  }
+
+  &--image {
+    height: auto;
+    width: 50%;
+    object-fit: cover;
+    object-position: center 10%;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      width: 100%;
+      height: 100rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__button {
+    animation: fade-in 1s ease;
+    @include custom-btn;
+    width: 30rem;
+    padding: $button-padding-desk;
+    font-size: $button-font-desk;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      width: 40rem;
+      padding: $button-padding-mobile;
+      font-size: $button-font-mobile;
+    }
+
+    &:hover {
+      border: 2px solid $color-black;
+      background-color: white;
+      color: $color-black;
+    }
+    &--inactive {
+      @include custom-btn;
+      width: 30rem;
+      padding: $button-padding-desk;
+      font-size: $button-font-desk;
+      background-color: $color-grey-light;
+      transition: all 0.2s ease;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        width: 40rem;
+        padding: $button-padding-mobile;
+        font-size: $button-font-mobile;
+      }
+      &:hover {
+        color: $color-grey-light;
+        border: 2px solid $color-grey-light;
+      }
+      &__shake {
+        animation: shake 0.4s ease;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__button-container {
+    text-align: right;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    background-color: $color-grey-light;
+  }
+  to {
+    background-color: $color-black;
+  }
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

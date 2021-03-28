@@ -1,0 +1,36 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  max-width: $width-general-second;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  margin-top: $navbar-height-desktop;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    height: 100%;
+  }
+
+  &__flex {
+    width: 80%;
+    margin: 0 auto;
+    padding: $page-padding;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      flex-direction: column;
+    }
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  &__title {
+    @include page-title;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
