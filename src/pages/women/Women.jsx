@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
-import "./Women.scss";
 import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
 import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
 import CategoryHomepage from "../category-homepage/CategoryHomepage";

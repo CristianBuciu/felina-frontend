@@ -3,7 +3,6 @@ import React, { useRef, useEffect } from "react";
 import { Spring } from "react-spring/renderprops.cjs";
 
 import { gsap } from "gsap";
-import "./CategoryHomepage.scss";
 
 const WomenHomepage = ({
   imgSrc,

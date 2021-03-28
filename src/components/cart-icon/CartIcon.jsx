@@ -1,5 +1,5 @@
 import React from "react";
-import "./CartIcon.scss";
+
 import { connect } from "react-redux";
 import { toggleCartShow } from "../../redux/cart/cart.actions";
 import { createStructuredSelector } from "reselect";

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./directory.styles.scss";
 import { Spring } from "react-spring/renderprops.cjs";
 import logo from "../../assets/cat.png";
 

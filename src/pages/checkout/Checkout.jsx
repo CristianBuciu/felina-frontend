@@ -9,7 +9,6 @@ import {
   selectCartItemsCount,
 } from "../../redux/cart/cart.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
-import "./Checkout.scss";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import StripeCheckoutButton from "../../components/stripe-button/StripeButton";

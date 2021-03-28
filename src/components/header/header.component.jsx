@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { connect } from "react-redux";
 import OptionLink from "../option-links/OptionLink";
-import "./header.styles.scss";
 import nextId from "react-id-generator";
 import { createStructuredSelector } from "reselect";
 import Sidebar from "../sidebar/Sidebar";

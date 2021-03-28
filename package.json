@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile:sass": ""
+    "compile:sass": "sass src/styles/main.scss src/styles/styles.css"
   },
   "browserslist": {
     "production": [

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../signin-signup/signin-signup.styles.scss";
 import { auth, signInWithGoogle } from "../../../firebase/firebase.utils";
 
 class SignIn extends Component {

@@ -1,9 +1,8 @@
 import React, { useState, Fragment } from "react";
 import { BiGridSmall, BiGridHorizontal } from "react-icons/bi";
 import { Link, Route, Switch, withRouter } from "react-router-dom";
-import "./CategoryDirectory.scss";
 
-import PopUpModal from "../pop-up-modal/PopUpModal"
+import PopUpModal from "../pop-up-modal/PopUpModal";
 
 //! =============================================================================
 const CategoryDirectory = ({ items, title, subTitle, match }) => {
@@ -47,11 +46,8 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
         className={`category-directory__items-container ${smallGrid} ${bigGrid}`}
       >
         {items.map((item) => (
-          <Fragment key={item.id} >
-            <div
-
-              className="category-directory__card"
-            >
+          <Fragment key={item.id}>
+            <div className="category-directory__card">
               <img
                 className="category-directory__card--image"
                 src={item.imgSrc}
@@ -66,12 +62,12 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
                     </span>
                     <span className="category-directory__card--text-flex__right">
                       {item.price} €
-                  </span>
+                    </span>
                   </div>
                   <div className="category-directory__card--pop-up__size-container--size-symbol">
                     <h2 className="category-directory__card--pop-up__size-container--size-symbol__text">
                       AVAILABLE SIZES
-                  </h2>
+                    </h2>
                     <div className="category-directory__card--pop-up__size-container--size-symbol__flex">
                       {item.availableSize.map((size, idx) => {
                         return size.quantity ? (
@@ -84,22 +80,17 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
                   </div>
                 </div>
 
-                <PopUpModal key={item.id} item={item} size={item.availableSize} />
-
+                <PopUpModal
+                  key={item.id}
+                  item={item}
+                  size={item.availableSize}
+                />
               </div>
             </div>
-
           </Fragment>
         ))}
-
-
-
-
-
-
-
       </div>
-    </div >
+    </div>
   );
 };
 

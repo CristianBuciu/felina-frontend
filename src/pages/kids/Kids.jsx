@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "./Kids.scss";
 import { selectKidsLinkDataSection } from "../../redux/kidsLinkData/kidsLinkData.selectors";
 import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
 import CategoryHomepage from "../category-homepage/CategoryHomepage";

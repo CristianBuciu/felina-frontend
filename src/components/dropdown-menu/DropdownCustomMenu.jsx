@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./DropdownCustomMenu.scss";
-
 import DropdownLinks from "../dropdown-links/DropdownLinks";
 import DropdownImages from "../dropdown-images/DropdownImages";
 import { useLocation } from "react-router-dom";

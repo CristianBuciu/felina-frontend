@@ -4,8 +4,6 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 import { connect } from "react-redux";
 
-import "./App.scss";
-
 import HomePage from "./pages/homepage/homepage.component.jsx";
 
 import Header from "./components/header/header.component";

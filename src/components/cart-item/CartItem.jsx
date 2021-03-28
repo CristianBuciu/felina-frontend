@@ -1,5 +1,5 @@
 import React from "react";
-import "./CartItem.scss";
+
 import { connect } from "react-redux";
 import { clearItemFromCart } from "../../redux/cart/cart.actions";
 import { RiDeleteBin6Line } from "react-icons/ri";

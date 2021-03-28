@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./PopUpModal.scss";
 import { Transition } from "react-spring/renderprops.cjs";
 import { RiCloseFill } from "react-icons/ri";
 import { connect } from "react-redux";

@@ -6,7 +6,6 @@ import {
   addItem,
   removeItem,
 } from "../../redux/cart/cart.actions";
-import "./CheckoutItem.scss";
 import { AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
 const CheckoutItem = ({
   item,

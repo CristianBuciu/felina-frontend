@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import "../../signin-signup/signin-signup.styles.scss";
-
 import {
   auth,
   createUserProfileDocument,

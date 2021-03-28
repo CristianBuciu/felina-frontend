@@ -14,8 +14,6 @@ import {
 
 import { toggleCartShow } from "../../redux/cart/cart.actions";
 import ReactDOM from "react-dom";
-import "./CartDropdown.scss";
-
 
 import { RiCloseFill } from "react-icons/ri";
 
