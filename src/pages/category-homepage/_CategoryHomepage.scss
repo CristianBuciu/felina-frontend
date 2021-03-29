@@ -19,12 +19,25 @@
   height: 4rem;
 
   @include flex-center;
+  @include respond(phone) {
+    justify-content: space-evenly;
+    top: $navbar-height-mobile;
+    height: 8rem;
+    background: rgba($color: $color-border, $alpha: 0.95);
+    backdrop-filter: blur(1rem);
+  }
 }
 .directory-menu {
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
   &__intro {
     position: absolute;
     top: 0%;
     width: 50%;
     height: calc(100% - 2rem);
+    @include respond(phone) {
+      right: 0 !important;
+    }
   }
 }

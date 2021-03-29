@@ -15,25 +15,30 @@ function Women({ womenLinkData, womenShopData }) {
   const dropdownMenuRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    gsap.to(
-      dropdownMenuRef.current,
-      {
-        scrollTrigger: {
-          trigger: dropdownMenuRef.current,
-          start: "top top+=50",
-          end: "bottom top",
-          toggleActions: "play none none restart",
-          // markers: true,
-          scrub: 0.5,
-        },
-
-        y: "-125%",
-
-        scaleY: 0.95,
-      },
-      []
+    const phoneMediaQuery = window.matchMedia(
+      "(min-device-width: 320px) and (max-device-width: 480px)"
     );
-  });
+    if (!phoneMediaQuery.matches) {
+      gsap.to(
+        dropdownMenuRef.current,
+        {
+          scrollTrigger: {
+            trigger: dropdownMenuRef.current,
+            start: "top top+=50",
+            end: "bottom top",
+            toggleActions: "play none none restart",
+            // markers: true,
+            scrub: 0.5,
+          },
+
+          y: "-125%",
+
+          scaleY: 0.95,
+        },
+        []
+      );
+    }
+  }, []);
   return (
     <div>
       <div ref={dropdownMenuRef} className="categories-flex">

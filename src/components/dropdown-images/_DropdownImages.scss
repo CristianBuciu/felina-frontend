@@ -6,6 +6,10 @@
   &__jacket {
     object-position: center bottom;
   }
+  @include respond(phone) {
+    height: 60rem;
+    width: 50rem;
+  }
 }
 
 .dropdown-images-container {
@@ -15,6 +19,10 @@
   &:hover &__inner {
     top: 50%;
     left: 0;
+  }
+  @include respond(phone) {
+    height: 54rem;
+    width: 45rem;
   }
   &__inner {
     display: flex;
@@ -32,6 +40,9 @@
     width: 100%;
     height: 100%;
     transition: all 0.2s ease-in-out;
+    @include respond(phone) {
+      top: 70%;
+    }
     &--title {
       margin-top: 2rem;
       color: white;
