@@ -7,8 +7,6 @@
   background: rgba($color: #000000, $alpha: 0.85);
   backdrop-filter: blur(2rem);
   z-index: 100000;
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  }
 }
 .category-directory-modal {
   padding: 2rem;
@@ -23,11 +21,7 @@
   display: flex;
   flex-direction: column;
   @include soft-shadow;
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    top: 1rem;
-    width: 98vw;
-    padding: 3rem;
-  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -38,9 +32,7 @@
       text-align: center;
       width: 100%;
       margin-bottom: 1rem;
-      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-        font-size: 3.8rem;
-      }
+
       &__main {
         color: $color-grey-dark2;
         border-bottom: 2px solid $color-border;
@@ -51,9 +43,6 @@
         color: $color-black;
         font-size: 2.5rem;
         font-weight: bold;
-        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-          font-size: 3rem;
-        }
       }
       &__vat {
         color: $color-grey-dark;
@@ -66,9 +55,7 @@
       cursor: pointer;
       outline: none;
       transition: all 0.4s ease-in-out;
-      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-        font-size: 8rem;
-      }
+
       &:hover {
         transform: rotate(180deg);
         color: $is-active;
@@ -79,11 +66,6 @@
     width: 100%;
     display: flex;
     gap: 2rem;
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-      height: fit-content;
-      flex-direction: column;
-    }
   }
   &__description {
     &--text {
@@ -91,18 +73,14 @@
       font-size: 1.6rem;
     }
     font-size: 2rem;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-      font-size: 3.5rem;
-    }
+
     &--title {
       font-size: 2rem;
       color: $color-black;
       letter-spacing: 0.2rem;
       font-weight: 600;
       text-align: center;
-      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-        font-size: 3.5rem;
-      }
+
       &__size {
         text-align: center;
         margin-top: 4rem;
@@ -127,12 +105,6 @@
       border: 2px solid $color-border;
       background-color: white;
       transition: all 0.2s ease-in-out;
-      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-        margin-right: 2rem;
-        width: 8rem;
-        height: 8rem;
-        font-size: 3.5rem;
-      }
 
       &:hover {
         border: 1px solid $color-black;
@@ -156,11 +128,6 @@
     width: 50%;
     object-fit: cover;
     object-position: center 10%;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-      width: 100%;
-      height: 100rem;
-      margin-bottom: 2rem;
-    }
   }
   &__button {
     animation: fade-in 1s ease;
@@ -168,11 +135,6 @@
     width: 30rem;
     padding: $button-padding-desk;
     font-size: $button-font-desk;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-      width: 40rem;
-      padding: $button-padding-mobile;
-      font-size: $button-font-mobile;
-    }
 
     &:hover {
       border: 2px solid $color-black;
@@ -186,11 +148,7 @@
       font-size: $button-font-desk;
       background-color: $color-grey-light;
       transition: all 0.2s ease;
-      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-        width: 40rem;
-        padding: $button-padding-mobile;
-        font-size: $button-font-mobile;
-      }
+
       &:hover {
         color: $color-grey-light;
         border: 2px solid $color-grey-light;

@@ -8,17 +8,12 @@
   margin-bottom: 4rem;
 
   margin-top: $navbar-height-desktop;
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    height: 100%;
-  }
 
   &__flex {
     width: 80%;
     margin: 0 auto;
     padding: $page-padding;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-      flex-direction: column;
-    }
+
     margin-top: 2rem;
     display: flex;
     justify-content: center;

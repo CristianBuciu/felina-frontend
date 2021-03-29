@@ -15,7 +15,7 @@ function Sidebar({ currentUser }) {
           className="hamburger-react-style"
           hideOutline
           color="rgb(55, 55, 55)"
-          size={60}
+          size={50}
           toggled={sidebar}
           toggle={setSidebar}
         />

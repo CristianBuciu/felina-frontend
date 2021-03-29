@@ -16,6 +16,9 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 import { Transition } from "react-spring/renderprops.cjs";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+//! Icons
+
 //! =============================================================================
 const Header = ({ currentUser, showCart }) => {
   const dir = Math.random() >= 0.5 ? -1 : 1;
@@ -27,91 +30,96 @@ const Header = ({ currentUser, showCart }) => {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    gsap.to(
-      logoRef.current,
-      {
-        scrollTrigger: {
-          trigger: logoRef.current,
-          start: "top top",
-          end: "bottom",
-          toggleActions: "play none none reset",
-          // markers: true,
-          scrub: 1,
-        },
-        scale: 0.4,
-        x: "-45%",
-        y: "-25%",
-      },
-      []
+    const phoneMediaQuery = window.matchMedia(
+      "(min-device-width: 320px) and (max-device-width: 480px)"
     );
-
-    gsap.to(
-      logoTitleRef.current,
-      {
-        scrollTrigger: {
-          trigger: logoTitleRef.current,
-          start: "top top",
-          end: "bottom",
-          toggleActions: "play none none reset",
-          // markers: true,
-          scrub: 1,
+    if (!phoneMediaQuery.matches) {
+      gsap.to(
+        logoRef.current,
+        {
+          scrollTrigger: {
+            trigger: logoRef.current,
+            start: "top top",
+            end: "bottom",
+            toggleActions: "play none none reset",
+            // markers: true,
+            scrub: 1,
+          },
+          scale: 0.4,
+          x: "-45%",
+          y: "-25%",
         },
-        autoAlpha: 0,
-      },
-      []
-    );
+        []
+      );
 
-    gsap.to(
-      headerAlertRef.current,
-      {
-        scrollTrigger: {
-          trigger: headerAlertRef.current,
-          start: "top top",
-          end: "bottom",
-          toggleActions: "play none none reset",
-          // markers: true,
-          scrub: 1,
+      gsap.to(
+        logoTitleRef.current,
+        {
+          scrollTrigger: {
+            trigger: logoTitleRef.current,
+            start: "top top",
+            end: "bottom",
+            toggleActions: "play none none reset",
+            // markers: true,
+            scrub: 1,
+          },
+          autoAlpha: 0,
         },
-        autoAlpha: 0,
-      },
-      []
-    );
+        []
+      );
 
-    gsap.to(
-      headerLinksRef.current,
-      {
-        scrollTrigger: {
-          trigger: headerLinksRef.current,
-          start: "top top",
-          end: "bottom",
-          toggleActions: "play none none reset",
-          // markers: true,
-          scrub: 1,
+      gsap.to(
+        headerAlertRef.current,
+        {
+          scrollTrigger: {
+            trigger: headerAlertRef.current,
+            start: "top top",
+            end: "bottom",
+            toggleActions: "play none none reset",
+            // markers: true,
+            scrub: 1,
+          },
+          autoAlpha: 0,
         },
-        scale: 0.8,
-        y: "-88%",
-      },
-      []
-    );
-    gsap.to(
-      headerRef.current,
-      {
-        scrollTrigger: {
-          trigger: headerLinksRef.current,
-          start: "top top",
-          end: "bottom",
-          toggleActions: "play none none reset",
-          // markers: true,
-          scrub: 1,
+        []
+      );
+
+      gsap.to(
+        headerLinksRef.current,
+        {
+          scrollTrigger: {
+            trigger: headerLinksRef.current,
+            start: "top top",
+            end: "bottom",
+            toggleActions: "play none none reset",
+            // markers: true,
+            scrub: 1,
+          },
+          scale: 0.8,
+          y: "-88%",
         },
+        []
+      );
+      gsap.to(
+        headerRef.current,
+        {
+          scrollTrigger: {
+            trigger: headerLinksRef.current,
+            start: "top top",
+            end: "bottom",
+            toggleActions: "play none none reset",
+            // markers: true,
+            scrub: 1,
+          },
 
-        height: "50px",
+          height: "50px",
 
-        duration: 0.5,
-      },
-      []
-    );
-  });
+          duration: 0.5,
+        },
+        []
+      );
+    }
+  }, [window]);
 
   return (
     <header ref={headerRef} className="app-header">

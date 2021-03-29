@@ -1,11 +1,6 @@
 .app {
   width: 100%;
   min-height: 100vh;
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    margin-top: calc(4rem + #{$navbar-height-mobile});
-    min-height: calc(100vh - #{$top-navbar-desktop} - #{$navbar-height-mobile});
-    width: 100%;
-  }
 }
 
 #dropdown-cart-portal {
@@ -15,5 +10,5 @@
 .main-content {
   min-height: calc(100vh - #{$navbar-height-desktop}) !important;
   margin-top: $navbar-height-desktop !important;
-  width: 100%;
+  width: 100vw;
 }

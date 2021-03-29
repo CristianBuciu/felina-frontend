@@ -1,7 +1,5 @@
 @import "./variables";
 
-
-
 @mixin page-title {
   font-family: $font-special;
   text-align: center;
@@ -33,53 +31,53 @@
 
 @mixin soft-shadow {
   box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.1),
-    0 0 2rem rgba($color: #000000, $alpha: 0.05)  !important;
+    0 0 2rem rgba($color: #000000, $alpha: 0.05) !important;
 }
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media (min-device-width: 320px) and (max-device-width: 480px) {
       @content;
     }
   }
 
   @if $breakpoint == tab-port {
-    @media (min-width: 37.5625em) and (max-width: 56.25em) {
+    @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
       @content;
     }
   }
 
   @if $breakpoint == tab-land {
-    @media (min-width: 56.3125em) and (max-width: 75em) {
+    @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
       @content;
     }
   }
 
   @if $breakpoint == big-desk {
-    @media (min-width: 112.5em) {
+    @media (min-width: 1824px) {
       @content;
     }
   }
 }
 
 @mixin custom-btn {
-  font-family: $font-buttons  !important;
-  font-size: 1.6rem  !important;
-  color: white  !important;
-  background: $color-black  !important;
-  border: 2px solid transparent  !important;
-  letter-spacing: 0.4rem  !important;
-  -webkit-appearance: none  !important;
-  outline: none  !important;
-  transition: all 0.2s ease  !important;
-  font-size: $button-font-desk  !important;
-  padding: $button-padding-desk  !important;
-  font-weight: 600  !important;
+  font-family: $font-buttons !important;
+  font-size: 1.6rem !important;
+  color: white !important;
+  background: $color-black !important;
+  border: 2px solid transparent !important;
+  letter-spacing: 0.4rem !important;
+  -webkit-appearance: none !important;
+  outline: none !important;
+  transition: all 0.2s ease !important;
+  font-size: $button-font-desk !important;
+  padding: $button-padding-desk !important;
+  font-weight: 600 !important;
 
   &:hover {
-    color: $color-black  !important;
-    background: white  !important;
-    border: 2px solid $color-black  !important;
+    color: $color-black !important;
+    background: white !important;
+    border: 2px solid $color-black !important;
   }
 }
 

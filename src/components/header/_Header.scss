@@ -32,22 +32,15 @@
     justify-content: space-between;
     height: $top-navbar-desktop;
     font-family: $font-writing;
-
-    @media only screen and (min-width: 540px) and (max-width: 1366px) {
-      top: $navbar-height-mobile;
-      font-size: 1.5rem;
+    @include respond(phone) {
+      height: 9rem;
     }
-
     &--text {
       font-family: $font-writing;
       text-align: center;
       width: 50%;
       letter-spacing: 0.15rem;
       font-weight: 600;
-      @media only screen and (min-width: 540px) and (max-width: 1366px) {
-        @include flex-center;
-        height: 14rem;
-      }
     }
   }
 
@@ -63,10 +56,6 @@
   &__logo {
     height: 7rem;
 
-    @media only screen and (min-width: 375px) and (max-width: 812px) {
-      width: auto;
-      height: 8rem;
-    }
     //? =============================================================================
     //?  Title
     //? =============================================================================
@@ -82,9 +71,6 @@
       width: 100%;
       height: 100%;
       margin-bottom: 0;
-      @media only screen and (min-width: 375px) and (max-width: 812px) {
-        display: none;
-      }
     }
   }
 
@@ -97,19 +83,15 @@
     padding: 1rem 5rem;
     height: 9rem;
 
-    @media only screen and (min-width: 375px) and (max-width: 812px) {
-      background-color: transparent;
-      padding: 0;
-      position: absolute;
-      border: 1px solid red;
-      left: 50%;
-      top: 1rem;
-      width: fit-content;
-      transform: translateX(-50%);
-    }
-
     &:hover {
       text-decoration: none;
+    }
+
+    @include respond(phone) {
+      background-color: transparent;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   //? =============================================================================
@@ -121,18 +103,14 @@
     justify-content: center;
     gap: 2rem;
     align-items: center;
-
     border-top: 1px solid $color-border;
-    @media only screen and (min-width: 375px) and (max-width: 812px) {
+
+    @include respond(phone) {
       display: none;
-      width: 0;
     }
   }
 
   &__options-links {
-    @media only screen and (min-width: 375px) and (max-width: 812px) {
-    }
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,9 +140,6 @@
     justify-content: flex-end;
     gap: 2rem;
 
-    @media only screen and (min-width: 375px) and (max-width: 812px) {
-      width: 50%;
-    }
     &--close {
       margin: 0;
       font-weight: 600;
@@ -177,8 +152,6 @@
     }
   }
   &__icon-link {
-    @media only screen and (min-width: 375px) and (max-width: 812px) {
-    }
     text-decoration: none;
     color: $color-black;
 
@@ -209,10 +182,8 @@
 
 .icons {
   font-size: 2.4rem;
-
-  @media only screen and (min-width: 375px) and (max-width: 812px) {
-    font-size: 3rem;
-    margin-left: 0rem;
+  @include respond(phone) {
+    font-size: 4rem;
   }
 }
 
@@ -230,7 +201,7 @@
 
 #header__alert {
   font-size: 1.6rem;
-  @media only screen and (min-width: 375px) and (max-width: 812px) {
+  @include respond(phone) {
     display: none;
   }
 }
