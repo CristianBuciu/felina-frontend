@@ -60,7 +60,9 @@ const Directory = (props) => {
                     FEL!NA
                   </span>
                   <br />
-                  BE FIERCE, BE BOLD, BE YOU
+                  <span className="directory-menu__top-part__lower--title__slogan">
+                    BE FIERCE, BE BOLD, BE YOU
+                  </span>
                 </h1>
               </div>
             </div>
