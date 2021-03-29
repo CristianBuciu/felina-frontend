@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { auth, signInWithGoogle } from "../../../firebase/firebase.utils";
 
+import google from "../../../assets/google.png";
 class SignIn extends Component {
   constructor(props) {
     super(props);
@@ -74,11 +75,7 @@ class SignIn extends Component {
               className="submit-btn signin-btn google-btn"
               onClick={signInWithGoogle}
             >
-              <img
-                alt="google-icon"
-                className="google-icon"
-                src={"http://pngimg.com/uploads/google/google_PNG19635.png"}
-              />
+              <img alt="google-icon" className="google-icon" src={google} />
             </button>
           </div>
         </div>

@@ -11,7 +11,7 @@
   top: 4.2rem;
   left: 3rem;
   display: none;
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  @media only screen and (min-width: 375px) and (max-width: 812px) {
     display: flex;
   }
 
@@ -27,7 +27,7 @@
 }
 
 .nav-menu {
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  @media only screen and (min-width: 375px) and (max-width: 812px) {
     padding-left: 12rem;
     background-color: white;
     height: 100vh;

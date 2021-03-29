@@ -4,7 +4,7 @@
   padding: 2rem;
 
   &__header {
-    font-family: $font-writting;
+    font-family: $font-writing;
   }
   &__title {
     @include page-title;
@@ -71,7 +71,7 @@
       &__title {
         font-size: 1.8rem;
         width: 60%;
-        font-family: $font-writting;
+        font-family: $font-writing;
         font-weight: 400;
         color: $color-black;
       }
@@ -102,7 +102,7 @@
             color: $color-black;
           }
           &__greyed {
-            font-family: $font-writting;
+            font-family: $font-writing;
             font-weight: 600;
             color: $color-grey-dark;
           }

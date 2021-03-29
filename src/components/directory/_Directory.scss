@@ -13,17 +13,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     &--image {
       width: 33.33%;
       height: 100%;
       object-fit: cover;
+      @media only screen and (min-width: 540px) and (max-width: 1366px) {
+        width: 49%;
+      }
 
       &__women {
         object-position: 22% top;
+        @media only screen and (min-width: 540px) and (max-width: 1366px) {
+          margin-right: 1%;
+        }
       }
       &__man {
         object-position: 83% top;
+        @media only screen and (min-width: 540px) and (max-width: 1366px) {
+          margin-left: 1%;
+        }
       }
       &__kids {
         object-position: 60% 20%;
@@ -42,6 +52,19 @@
       width: 33.3%;
       height: 100%;
       background-color: $color-border;
+
+      @media only screen and (min-width: 540px) and (max-width: 1366px) {
+        position: absolute;
+        width: 100%;
+        height: 25vw;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        background-color: rgba($color: $color-border, $alpha: 0.95);
+      }
+      @media only screen and (min-width: 275px) and (max-width: 812px) {
+        height: 48vw;
+      }
       &__logo {
         width: 10rem;
       }
@@ -61,6 +84,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media only screen and (min-width: 540px) and (max-width: 1366px) {
+          margin-top: 0;
+        }
         &__button {
           @include custom-btn;
           width: 20rem;
@@ -72,12 +98,21 @@
       width: 100%;
       height: 15%;
       margin-top: 8rem;
+      @media only screen and (min-width: 540px) and (max-width: 1366px) {
+        margin-top: 14rem;
+      }
       &--title {
         font-style: italic;
         text-align: center;
         margin-top: 2rem;
         color: $color-grey-dark2;
         font-weight: 400;
+        @media only screen and (min-width: 540px) and (max-width: 1366px) {
+          background-color: rgba($color: $color-black, $alpha: 0.98);
+          color: $color-border;
+          padding: 2rem;
+          margin-top: 0;
+        }
         &__logo {
           font-size: 5rem;
           font-weight: 600;
