@@ -1,6 +1,8 @@
 .app {
   width: 100%;
   min-height: 100vh;
+  @include respond(phone) {
+  }
 }
 
 #dropdown-cart-portal {
@@ -11,4 +13,7 @@
   min-height: calc(100vh - #{$navbar-height-desktop}) !important;
   margin-top: $navbar-height-desktop !important;
   width: 100vw;
+  @include respond(phone) {
+    margin-top: $navbar-height-mobile !important;
+  }
 }

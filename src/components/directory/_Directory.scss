@@ -2,6 +2,9 @@
   width: 100%;
   height: calc(100vh - #{$navbar-height-desktop} - 4rem);
   padding: $page-padding;
+  @include respond(phone) {
+    padding: 0;
+  }
 
   &--grey {
     width: 100%;

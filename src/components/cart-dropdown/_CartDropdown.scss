@@ -15,7 +15,7 @@
   scrollbar-width: none; /* Firefox */
 
   @include respond(phone) {
-    top: 10rem;
+    top: calc(1rem + #{$navbar-height-mobile});
     min-height: 15rem;
     width: 90%;
   }
