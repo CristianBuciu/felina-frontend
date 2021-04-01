@@ -19,8 +19,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond(phone) {
+      height: 8rem;
+      margin-bottom: 2rem;
+    }
     &--products {
       font-family: $font-headers;
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
 
     &--grid-select {
@@ -35,6 +42,9 @@
         font-size: 3rem;
         color: $color-grey-light;
         cursor: pointer;
+        @include respond(phone) {
+          font-size: 8rem;
+        }
       }
     }
   }
@@ -42,11 +52,17 @@
     width: 100%;
   }
   &__card {
-    height: calc(
+    min-height: 80rem;
+    max-height: calc(
       100vh - #{$navbar-height-desktop} - 6rem - 10rem - 4rem - 2rem
     );
     overflow: hidden;
     position: relative;
+    @include respond(phone) {
+      min-height: 60rem;
+      max-height: calc(100vh - 50rem);
+      box-shadow: $shadow-soft;
+    }
     &:hover &--pop-up {
       animation: pop-up 0.4s forwards;
     }
@@ -64,6 +80,10 @@
       width: fit-content;
       font-weight: 600;
       transition: all 0.2s ease;
+      @include respond(phone) {
+        font-size: 4rem;
+        margin-top: 90%;
+      }
 
       &:hover {
         text-decoration: none;
@@ -85,6 +105,10 @@
       justify-content: center;
       align-items: center;
       transition: all 0.4s ease-in-out;
+      @include respond(phone) {
+        left: 0;
+        top: 0;
+      }
       &:hover {
         cursor: pointer;
         top: 0;
@@ -112,15 +136,23 @@
           padding-bottom: 0.5rem;
           height: 7%;
           border-bottom: 1px solid $color-black;
+          @include respond(phone) {
+            top: 88%;
+            height: 10%;
+            font-size: 3.2rem;
+            border-bottom: none;
+          }
           &__text {
             font-size: 1.6rem;
             letter-spacing: 1px;
             color: $color-grey-dark;
             font-family: $font-headers;
+            @include respond(phone) {
+              font-size: 2.4rem;
+            }
           }
           &__flex {
             font-family: $font-buttons;
-
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -136,6 +168,11 @@
       object-fit: cover;
       object-position: center top;
       transition: transform 0.4s linear;
+      @include respond(phone) {
+        transform: scale(0.9);
+
+        margin-top: 5rem;
+      }
     }
     &:hover &--pop-up {
       border-top: 1px solid $color-black;
@@ -161,27 +198,43 @@
       align-items: center;
       padding: 1rem;
       font-size: 2rem;
+      @include respond(phone) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        background-color: rgba($color: white, $alpha: 0.95);
+      }
 
       &__left {
         @include item-text;
+        @include respond(phone) {
+          font-size: 3.2rem;
+        }
       }
       &__right {
         font-family: $font-headers;
         font-size: 2rem;
         color: $color-black;
+        @include respond(phone) {
+          font-size: 3.2rem;
+        }
       }
     }
   }
 }
 .small-grid {
   display: grid;
-  grid-gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(52rem, 1fr));
 }
 .big-grid {
   display: grid;
-  grid-gap: 1rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 }

@@ -12,7 +12,6 @@ function Sidebar({ currentUser }) {
     <div className="sidebar-container">
       <div className="navbar-button">
         <Hamburger
-          className="hamburger-react-style"
           hideOutline
           color="rgb(55, 55, 55)"
           toggled={sidebar}

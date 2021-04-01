@@ -53,8 +53,8 @@
     }
   }
 
-  @if $breakpoint == big-desk {
-    @media (min-width: 1824px) {
+  @if $breakpoint == desk {
+    @media (min-width: 1025px) {
       @content;
     }
   }

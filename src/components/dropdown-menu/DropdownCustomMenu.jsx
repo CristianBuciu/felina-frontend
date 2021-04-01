@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import DropdownLinks from "../dropdown-links/DropdownLinks";
 import DropdownImages from "../dropdown-images/DropdownImages";
 import { useLocation } from "react-router-dom";
 
 const DropdownCustomMenu = (props) => {
-  //* ===========================================================================
+  const [clickedDropdown, setClickedDropdown] = useState(false);
+
+  const [onPhoneDetector, setOnPhoneDetector] = useState(false);
+
+  //! Use effect
+  useEffect(() => {
+    const phoneMediaQuery = window.matchMedia(
+      "(min-device-width: 320px) and (max-device-width: 480px)"
+    );
+    if (phoneMediaQuery.matches) {
+      setOnPhoneDetector(true);
+    }
+  }, []);
+
+  //! Handlers
+  const onClickHandler = () => {
+    if (onPhoneDetector) {
+      setClickedDropdown(!clickedDropdown);
+    } else return;
+  };
+
+  const closeMenuHandler = () => {
+    setClickedDropdown(false);
+  };
 
   let n = props.size;
   const randomImages = props.dropdownLinks
@@ -23,15 +46,26 @@ const DropdownCustomMenu = (props) => {
   return (
     <div className="categories-dropdown">
       <div
+        tabIndex={0}
+        role="menu"
+        onClick={onClickHandler}
+        onBlur={closeMenuHandler}
         className={`${props.cName} ${activeClass} categories-dropdown__hover-span`}
       >
         {props.title}
 
-        <div className="dropdown-items">
+        <div
+          className={
+            onPhoneDetector && clickedDropdown
+              ? "phone-dropdown-show dropdown-items"
+              : "dropdown-items"
+          }
+        >
           <div className="dropdown-items__links-container">
             <h2 className="dropdown-items__title">{props.title}</h2>
             {props.dropdownLinks.map((el) => (
               <DropdownLinks
+                handler={closeMenuHandler}
                 key={el.id}
                 title={el.title}
                 route={el.route}

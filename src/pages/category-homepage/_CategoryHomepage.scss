@@ -22,7 +22,7 @@
   @include respond(phone) {
     justify-content: space-evenly;
     top: $navbar-height-mobile;
-    height: 8rem;
+    height: 12rem;
     background: rgba($color: $color-border, $alpha: 0.95);
     backdrop-filter: blur(1rem);
   }
