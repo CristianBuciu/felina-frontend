@@ -67,7 +67,7 @@ const CartDropdown = ({
 
             <p className="cart-dropdown__items--subtotal">
               <span className="cart-dropdown__items--subtotal__greyed">
-                SUBTOTAL
+                SUBTOTAL &nbsp;
               </span>{" "}
               <span className="cart-dropdown__items--subtotal__price">
                 {roundToTwo(subtotal)} €

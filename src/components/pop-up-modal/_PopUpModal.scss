@@ -135,6 +135,9 @@
     width: 30rem;
     padding: $button-padding-desk;
     font-size: $button-font-desk;
+    @include respond(phone) {
+      width: auto;
+    }
 
     &:hover {
       border: 2px solid $color-black;

@@ -1,21 +1,24 @@
+const { v4: uuidv4 } = require("uuid");
+
 const INITIAL_STATE = {
   newArrival: {
-    id: "a1",
+    id: uuidv4(),
     categoryTitle: "New Arrivals",
     subcategories: [
       {
-        id: "a11",
+        id: uuidv4(),
         title: "Felina Collection",
         subTitle: "New Arrivals",
         route: "/women/new-arrivals/felina-collection",
         items: [
+          //! Felina Collection
           {
-            id: 0,
+            id: uuidv4(),
 
-            title: "Blue Sleeveless Dress",
+            title: "SWEATER CUT-OUTS",
             price: 199.99,
             imgSrc:
-              "https://images.pexels.com/photos/3600325/pexels-photo-3600325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BGR045590Z-G1BA",
 
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
@@ -48,13 +51,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 1,
+            id: uuidv4(),
 
-            title: "Black Round Sunglasses",
+            title: "RIB SWEATER",
             price: 99.9,
             quantity: 99,
             imgSrc:
-              "https://images.pexels.com/photos/3589734/pexels-photo-3589734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG5045613Z-JBLK",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -86,13 +89,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 2,
+            id: uuidv4(),
 
-            title: "Black Leather Jacket",
-            price: 350.99,
+            title: "CARDIGAN",
+            price: 150.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/3873498/pexels-photo-3873498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG5125608Z-G1CH",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -124,13 +127,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 3,
+            id: uuidv4(),
 
-            title: "Red High Shoes",
+            title: "PRINT JERSEY SKIRT",
             price: 130.9,
 
             imgSrc:
-              "https://images.pexels.com/photos/3782789/pexels-photo-3782789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7006063A-P49S-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -162,13 +165,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 4,
+            id: uuidv4(),
 
-            title: "Gray Knitted Sweater",
-            price: 115.9,
+            title: "LOGO SUNGLASSES",
+            price: 185.9,
 
             imgSrc:
-              "https://images.pexels.com/photos/5770469/pexels-photo-5770469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GM081057QQQ-01B",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -200,13 +203,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 5,
+            id: uuidv4(),
 
-            title: "Syntetic Gray Fur Coat ",
+            title: "SKINNY DENIM PANT",
             price: 250.9,
 
             imgSrc:
-              "https://images.pexels.com/photos/3769125/pexels-photo-3769125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG1559531Z-F6T9-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -238,13 +241,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 6,
+            id: uuidv4(),
 
-            title: "Cotton White Shirt ",
-            price: 49.99,
+            title: "JERSEY BODY",
+            price: 119.99,
 
             imgSrc:
-              "https://images.unsplash.com/photo-1581338834647-b0fb40704e21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG6046059A-G1CH",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -276,13 +279,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 7,
+            id: uuidv4(),
 
-            title: "Red Formal Coat ",
-            price: 89.99,
+            title: "PRINT SHIRT",
+            price: 139.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/1390600/pexels-photo-1390600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG6196063A-P49S",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -315,20 +318,21 @@ const INITIAL_STATE = {
           },
         ],
       },
+      //! Denim Season ==========================================================
       {
-        id: "a12",
-        title: "Holiday Looks",
+        id: uuidv4(),
+        title: "Denim Season",
         subTitle: "New Arrivals",
-        route: "/women/new-arrivals/holiday-looks",
+        route: "/women/new-arrivals/denim-season",
         items: [
           {
-            id: 8,
+            id: uuidv4(),
 
-            title: "Christmas Blue Sweater ",
-            price: 89.99,
+            title: "BODYCON DENIM DRESS",
+            price: 119.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/3439818/pexels-photo-3439818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GK17D4CS1-PIN1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -358,130 +362,14 @@ const INITIAL_STATE = {
                 quantity: 0,
               },
             ],
-            route: "/women/new-arrivals/holiday-looks/8",
 
-            id: 9,
+            id: uuidv4(),
 
-            title: " Yellow Knitted Sweater ",
-            price: 129.99,
-
-            imgSrc:
-              "https://images.pexels.com/photos/5352625/pexels-photo-5352625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            description:
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
-            availableSize: [
-              {
-                size: "extra small",
-                symbol: "XS",
-                quantity: 0,
-              },
-              {
-                size: "small",
-                symbol: "S",
-                quantity: 0,
-              },
-              {
-                size: "medium",
-                symbol: "M",
-                quantity: 20,
-              },
-              {
-                size: "large",
-                symbol: "L",
-                quantity: 10,
-              },
-              {
-                size: "extra large",
-                symbol: "XL",
-                quantity: 0,
-              },
-            ],
-            route: "/women/new-arrivals/holiday-looks/9",
-          },
-          {
-            id: 10,
-
-            title: "Red Holliday Sweater ",
-            price: 79.99,
-
-            imgSrc:
-              "https://images.pexels.com/photos/3746210/pexels-photo-3746210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            description:
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
-            availableSize: [
-              {
-                size: "extra small",
-                symbol: "XS",
-                quantity: 0,
-              },
-              {
-                size: "small",
-                symbol: "S",
-                quantity: 0,
-              },
-              {
-                size: "medium",
-                symbol: "M",
-                quantity: 20,
-              },
-              {
-                size: "large",
-                symbol: "L",
-                quantity: 10,
-              },
-              {
-                size: "extra large",
-                symbol: "XL",
-                quantity: 0,
-              },
-            ],
-          },
-          {
-            id: 11,
-
-            title: "Blue Holliday Sweater ",
-            price: 85.55,
-
-            imgSrc:
-              "https://images.pexels.com/photos/709789/pexels-photo-709789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            description:
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
-            availableSize: [
-              {
-                size: "extra small",
-                symbol: "XS",
-                quantity: 0,
-              },
-              {
-                size: "small",
-                symbol: "S",
-                quantity: 0,
-              },
-              {
-                size: "medium",
-                symbol: "M",
-                quantity: 20,
-              },
-              {
-                size: "large",
-                symbol: "L",
-                quantity: 10,
-              },
-              {
-                size: "extra large",
-                symbol: "XL",
-                quantity: 0,
-              },
-            ],
-          },
-          {
-            id: 12,
-
-            title: "Pink Knitted Sweater ",
+            title: " FIT DENIM DRESS ",
             price: 109.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/4863052/pexels-photo-4863052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RK0PD14LN-IMGN",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -513,13 +401,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 13,
+            id: uuidv4(),
 
-            title: "Grey Synthetic Coat ",
-            price: 225.99,
+            title: "FLARE DENIM PANT",
+            price: 79.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/2755612/pexels-photo-2755612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG1539340Z-BRWA-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -551,13 +439,127 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 14,
+            id: uuidv4(),
 
-            title: "Grey Full Synthetic Coat ",
-            price: 425.99,
+            title: "DENIM PANT ABRASIONS",
+            price: 105.55,
 
             imgSrc:
-              "https://images.pexels.com/photos/2043204/pexels-photo-2043204.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0BA09D3Y0A-MYFA-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "BELL-BOTTOM DENIM PANT",
+            price: 109.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GA27R49T0-MNCB-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "DENIM JACKET",
+            price: 79.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/WBYGJ2R49T4-GVLW",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "EMBROIDERY DENIM PANT",
+            price: 149.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RA46D4AO2-WFLO-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -589,13 +591,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 15,
+            id: uuidv4(),
 
-            title: "Holiday Markings Sweater ",
-            price: 225.99,
+            title: "POLKADOT  DENIM PANT",
+            price: 105.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/3521891/pexels-photo-3521891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0RA12R4AS0-GODB-ALT3",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -629,19 +631,19 @@ const INITIAL_STATE = {
         ],
       },
       {
-        id: "a13",
+        id: uuidv4(),
         title: "Sustainable Style",
         subTitle: "New Arrivals",
         route: "/women/new-arrivals/sustainable-style",
         items: [
           {
-            id: 16,
+            id: uuidv4(),
 
-            title: "White Linen Shirt ",
-            price: 105.99,
+            title: "HIGH-NECK MIDI DRESS",
+            price: 179.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/4153187/pexels-photo-4153187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GSK178080Z-G1CR",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -673,13 +675,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 17,
+            id: uuidv4(),
 
-            title: "White Linen Shirt ",
-            price: 65.99,
+            title: "RIB DRESS",
+            price: 149.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/3021601/pexels-photo-3021601.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG7785012Z-G1AC",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -711,13 +713,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 18,
+            id: uuidv4(),
 
-            title: "White Linen Bra ",
-            price: 40.99,
+            title: "TWEED-LOOK DRESS",
+            price: 240.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/4641680/pexels-photo-4641680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7289543Z-F1Y8-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -749,13 +751,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 19,
+            id: uuidv4(),
 
-            title: "Black Cotton Jumpsuit",
-            price: 99.99,
+            title: "DRESS BUTTONS",
+            price: 199.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/4765370/pexels-photo-4765370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7429529Z-TWHM",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -790,24 +792,26 @@ const INITIAL_STATE = {
       },
     ],
   },
+  //! CLOTHING============================================
   clothing: {
-    id: "a2",
+    id: uuidv4(),
     categoryTitle: "Clothing",
     subcategories: [
       {
-        id: "a21",
+        id: uuidv4(),
         title: "Coats & Jackets",
         subTitle: "Clothing",
         route: "/women/clothing/coats-jackets",
         items: [
+          //! Coats & Jackets ===========================
           {
-            id: 20,
+            id: uuidv4(),
 
-            title: "Grey Formal Coat",
-            price: 185.89,
+            title: "COAT",
+            price: 229.89,
 
             imgSrc:
-              "https://images.pexels.com/photos/5669640/pexels-photo-5669640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG3559550Z-G022-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -839,13 +843,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 21,
+            id: uuidv4(),
 
-            title: "Black Leather Jacket",
-            price: 350.99,
+            title: "CREPE BLAZER",
+            price: 220.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/3873498/pexels-photo-3873498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG2059545Z-F6T9-ALT1",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -877,13 +881,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 23,
+            id: uuidv4(),
 
-            title: "Syntetic Gray Fur Coat ",
-            price: 250.9,
+            title: "FAUX LEATHER JACKET",
+            price: 159.9,
 
             imgSrc:
-              "https://images.pexels.com/photos/3769125/pexels-photo-3769125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG3028984Z-F6T9",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -915,13 +919,13 @@ const INITIAL_STATE = {
             ],
           },
           {
-            id: 24,
+            id: uuidv4(),
 
-            title: "Red Formal Coat ",
-            price: 89.99,
+            title: "LOGO LINING BLAZER ",
+            price: 229.99,
 
             imgSrc:
-              "https://images.pexels.com/photos/1390600/pexels-photo-1390600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG2087804Z-G1F3",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -955,107 +959,2110 @@ const INITIAL_STATE = {
         ],
       },
       {
-        id: "a22",
+        //! Jeans ==================================================================
+        id: uuidv4(),
         title: "Jeans",
         subTitle: "Clothing",
         route: "/women/clothing/jeans",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "Jeans super elastic",
+            price: 119.19,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0BA09D46A1-BYSW-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "Jeans super fit",
+            price: 99.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0BA46D46E2-SPTF-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "Jeans full body",
+            price: 159.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RD49D4AK2-ONEW",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "Jeans slim super elastic",
+            price: 119.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GA26D3ZT7-POIP-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! T-shirts =====================================
       {
-        id: "a23",
+        id: uuidv4(),
         title: "T-Shirts",
         subTitle: "Clothing",
         route: "/women/clothing/t-shirts",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "PLACED PRINT T-SHIRT",
+            price: 39.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GI88R9TD2-G011",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "ALL OVER LOGO T-SHIRT",
+            price: 39.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GI57R4JZ4-P0CS-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "ALL OVER PRINT T-SHIRT",
+            price: 45.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RI98JA900-P07Q-ALT2",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "ALL-OVER PRINT T-SHIRT",
+            price: 39.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GI41K7NG0-JBLK",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Shirts & Blouses ===============================================
       {
-        id: "a24",
+        id: uuidv4(),
         title: "Shirts & Blouses",
         subTitle: "Clothing",
         route: "/women/clothing/shirts-blouses",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "EMBROIDERY LACE SHIRT",
+            price: 99.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GH0DWDW20-TWHT",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "ALL-OVER PRINT BLOUSE",
+            price: 79.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W61H38W1V32-P6L7",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "A-JOUR TAPES VISCOSE SHIRT",
+            price: 88.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RH52WAUK2-JBLK",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "ALL-OVER PRINT SHIRT ",
+            price: 139.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GGH087099Z-P6K2-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Dresses & Jumpsuits ===================================================
       {
-        id: "a25",
+        id: uuidv4(),
         title: "Dresses & Jumpsuits",
         subTitle: "Clothing",
         route: "/women/clothing/dresses-jumpsuits",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "ALL OVER PRINT BODYSUIT",
+            price: 59.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GP08RA4L1-P7AS-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "BOW JUMPSUIT",
+            price: 109.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GD0JK4JZ0-P76M",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "DRAPED JUMPSUIT",
+            price: 250.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GGK308177Z-G5K4-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LACE JUMPSUIT",
+            price: 139.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GD1HWDW30-TWHT",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Tops =====================================================
       {
-        id: "a26",
+        id: uuidv4(),
         title: "Tops",
         subTitle: "Clothing",
         route: "/women/clothing/tops",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "TURTLE NECK RIB TOP",
+            price: 59.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RP19KAER2-G1J7",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LACE TOP",
+            price: 55.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GP49KALO0-G1Y0",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "BODY ALL-OVER PRINT",
+            price: 69.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0RP45RA4L0-JBLK",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "BLOUSE BOWS",
+            price: 119.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG4739535Z-P49S-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Skirts ========================================
       {
-        id: "a27",
+        id: uuidv4(),
         title: "Skirts",
         subTitle: "Clothing",
         route: "/women/clothing/skirts",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "SHAPING FIT DENIM SKIRT",
+            price: 99.19,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RD60D4AK2-ONEW-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "MINI DOTS PRINT SKIRT",
+            price: 99.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GD0NWBUD2-P05C-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "PRINT LONG SKIRT",
+            price: 129.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GD0VWDV90-P16P-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "KNIT LONGUETTE SKIRT",
+            price: 79.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0RR38R2QA0-F133-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Lingerie =========================================
       {
-        id: "a28",
+        id: uuidv4(),
         title: "Lingerie",
         subTitle: "Clothing",
         route: "/women/clothing/lingerie",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "ELASTIC TAPE BRAZILIAN",
+            price: 29.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/O1GE08PZ01T-TWHT-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO PUSH UP BRA",
+            price: 39.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/O1GC07NT01K-JBLK-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LACE BRASSIERE",
+            price: 21.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/O0BC00PZ01C-SRYW",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LACE NATURAL BRA ",
+            price: 19.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/O0BC01PZ01C-G110",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
     ],
   },
+  //! BAGS & ACCESSORIES ==============================================
   bagsAccessories: {
-    id: "a3",
+    id: uuidv4(),
     categoryTitle: "Bags & Accessories",
     subcategories: [
       {
-        id: "a31",
+        id: uuidv4(),
         title: "Bags",
         subTitle: "Bags & Accessories",
         route: "/women/bags-accessories/bags",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "GENUINE LEATHER LUXE HANDBAG",
+            price: 185.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HWLAPIL0206-COG-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO SHOPPER BAG",
+            price: 90.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HWVG6853240-BLS-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO HANDBAG",
+            price: 58.9,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HWKHLOP1006-BRO",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO SHOPPER",
+            price: 89.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HWVY7365220-BLA",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Watches =======================================
       {
-        id: "a32",
+        id: uuidv4(),
         title: "Watches",
         subTitle: "Bags & Accessories",
         route: "/women/bags-accessories/watches",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "TIE-DYE  WATCH",
+            price: 245.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GW0258FLSWC-L1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "CHRONOGRAPH WATCH",
+            price: 530.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/Y65005FLSWC-L7MF",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "CRYSTAL WATCH ",
+            price: 350.9,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GW0104FLSWC-L2",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "FLORAL ANALOGUE WATCH ",
+            price: 209.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GW0242FLSWC-L3",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Sunglasses ===========================================
       {
-        id: "a33",
+        id: uuidv4(),
         title: "Sunglasses",
         subTitle: "Bags & Accessories",
         route: "/women/bags-accessories/sunglasses",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "AVIATOR SUNGLASSES",
+            price: 99.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GU773564QQQ-10B-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "ROUND SUNGLASSES",
+            price: 89.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GU777858QQQ-01C-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "AVIATOR SUNGLASSES",
+            price: 99.9,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GU778363QQQ-28Z-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "OVAL SUNGLASSES ",
+            price: 115.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GU772453QQQ-01B-ALT1",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
     ],
   },
+  //! SHOES ==========================================
   shoes: {
-    id: "a4",
+    id: uuidv4(),
     categoryTitle: "Shoes",
     subcategories: [
       {
-        id: "a41",
+        id: uuidv4(),
         title: "Boots",
         subTitle: "Shoes",
         route: "/women/shoes/boots",
-        items: [{}, {}, {}, {}],
+        items: [
+          //! Boots ======================================
+          {
+            id: uuidv4(),
+
+            title: "LOGO LOW BOOT",
+            price: 185.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5ORNFAL08-BROWN",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "OLINIA COMBAT BOOT",
+            price: 139.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5OLIFAB08-BLACK",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "FLORAL COMBAT BOOT",
+            price: 150.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5OLIFAL08-BLKMU",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO COMBAT BOOT ",
+            price: 89.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL8ONAELE10-GREY",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Sneakers =========================================
       {
-        id: "a42",
+        id: uuidv4(),
         title: "Sneakers",
         subTitle: "Shoes",
         route: "/women/shoes/sneakers",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "BRADLY SNEAKER",
+            price: 185.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6B2RFAL12-WHIBR",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "MOXEA RUNNING SHOE",
+            price: 119.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6MX3ELE12-WHIFU",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO RUNNING SHOE ",
+            price: 119.9,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6MX4ESU12-PLATI",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "LOGO SNEAKER ",
+            price: 125.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5TESPEL12-BLKGO",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
+      //! Sandals ========================================
       {
-        id: "a43",
+        id: uuidv4(),
         title: "Sandals",
         subTitle: "Shoes",
         route: "/women/shoes/sandals",
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            id: uuidv4(),
+
+            title: "RION POLKADOT SANDAL",
+            price: 129.89,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6RIOFAB03-BLKWH",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 10,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "DIVINE LAMINATED SANDAL",
+            price: 135.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5DV2LEL03-GREEN",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 20,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 20,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "PEEP-TOE SANDAL ",
+            price: 145.9,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5GN3FAP07-LEOPA",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 20,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 20,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 0,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 10,
+              },
+            ],
+          },
+          {
+            id: uuidv4(),
+
+            title: "SILK RIBBON SANDAL ",
+            price: 79.99,
+
+            imgSrc:
+              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6TIFSAT03-BLACK",
+            description:
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
+            availableSize: [
+              {
+                size: "extra small",
+                symbol: "XS",
+                quantity: 0,
+              },
+              {
+                size: "small",
+                symbol: "S",
+                quantity: 0,
+              },
+              {
+                size: "medium",
+                symbol: "M",
+                quantity: 20,
+              },
+              {
+                size: "large",
+                symbol: "L",
+                quantity: 10,
+              },
+              {
+                size: "extra large",
+                symbol: "XL",
+                quantity: 0,
+              },
+            ],
+          },
+        ],
       },
     ],
   },

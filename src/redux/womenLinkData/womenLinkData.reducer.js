@@ -1,6 +1,8 @@
+const { v4: uuidv4 } = require("uuid");
+
 const INITIAL_STATE = [
   {
-    id: 1,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/women/new-arrivals",
@@ -8,183 +10,183 @@ const INITIAL_STATE = [
 
     dropdownLinks: [
       {
-        id: 11,
+        id: uuidv4(),
         title: "FEL!NA COLLECTION",
         route: "/women/new-arrivals/felina-collection",
         cName: "dropdown-links dropdown-links__important",
         imgSrc:
-          "https://images.pexels.com/photos/4255179/pexels-photo-4255179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GGK067068Z-P6K2",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 21,
-        title: "Holiday Looks",
-        route: "/women/new-arrivals/holiday-looks",
+        id: uuidv4(),
+        title: "Denim Season",
+        route: "/women/new-arrivals/denim-season",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1588613523533-656df85b8a35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG1539340Z-BRWA-ALT1",
         imageClassName: "most-wanted-image",
       },
       {
-        id: 31,
+        id: uuidv4(),
         title: "Sustainable Style",
         route: "/women/new-arrivals/sustainable-style",
         cName: "dropdown-links ",
         imgSrc:
-          "https://images.unsplash.com/photo-1563222781-576f9f9e4bee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7289543Z-F1Y8-ALT1",
         imageClassName: "most-wanted-image",
       },
     ],
   },
   {
-    id: 2,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/women/clothing",
     title: "Clothing",
     dropdownLinks: [
       {
-        id: 12,
+        id: uuidv4(),
         title: "Coats & Jackets",
         route: "/women/clothing/coats-jackets",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3538028/pexels-photo-3538028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG3009525Z-G1CH",
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 22,
+        id: uuidv4(),
         title: "Jeans",
         route: "/women/clothing/jeans",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/2068349/pexels-photo-2068349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG1539340Z-BRWA-ALT1",
         imageClassName: "most-wanted-image",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "T-shirts",
         route: "/women/clothing/t-shirts",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/5432532/pexels-photo-5432532.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RI9CJA900-TWHT",
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 42,
+        id: uuidv4(),
         title: "Shirts & Blouses",
         route: "/women/clothing/shirts-blouses",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/4972985/pexels-photo-4972985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG6086989Z-G6K8",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 52,
+        id: uuidv4(),
         title: "Dresses & Jumpsuits",
         route: "/women/clothing/dresses-jumpsuits",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3831039/pexels-photo-3831039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0GK68WDJY0-P0WB",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 62,
+        id: uuidv4(),
         title: "Tops",
         route: "/women/clothing/tops",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3119697/pexels-photo-3119697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0GH04WDJY0-P0WB",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 72,
+        id: uuidv4(),
         title: "Skirts",
         route: "/women/clothing/skirts",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/4577274/pexels-photo-4577274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GD0ZWDVC0-P76M-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 82,
+        id: uuidv4(),
         title: "Lingerie",
         route: "/women/clothing/lingerie",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3819577/pexels-photo-3819577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/O97C02PZ01C-A996-ALT1",
         imageClassName: "most-wanted-image ",
       },
     ],
   },
   {
-    id: 3,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/women/bags-accessories",
     title: "Bags & Accessories",
     dropdownLinks: [
       {
-        id: 31,
+        id: uuidv4(),
         title: "Bags",
         route: "/women/bags-accessories/bags",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/1374910/pexels-photo-1374910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HWLAPIL0206-COG-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "Watches",
         route: "/women/bags-accessories/watches",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GW0258FLSWC-L1",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 33,
+        id: uuidv4(),
         title: "Sunglasses",
         route: "/women/bags-accessories/sunglasses",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GU773564QQQ-10B-ALT1",
         imageClassName: "most-wanted-image ",
       },
     ],
   },
   {
-    id: 4,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/women/shoes",
     title: "Shoes",
     dropdownLinks: [
       {
-        id: 41,
+        id: uuidv4(),
         title: "Boots",
         route: "/women/shoes/boots",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/1501210/pexels-photo-1501210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL5ORNFAL08-BROWN",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 42,
+        id: uuidv4(),
         title: "Sneakers",
         route: "/women/shoes/sneakers",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3434962/pexels-photo-3434962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6B2RFAL12-WHIBR",
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 43,
+        id: uuidv4(),
         title: "Sandals",
         route: "/women/shoes/sandals",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1556227127-18a3071683eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/FL6RIOFAB03-BLKWH",
         imageClassName: "most-wanted-image ",
       },
     ],

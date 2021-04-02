@@ -1,6 +1,7 @@
+const { v4: uuidv4 } = require("uuid");
 const INITIAL_STATE = [
   {
-    id: 1,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/kids/new-arrivals",
@@ -8,7 +9,7 @@ const INITIAL_STATE = [
 
     dropdownLinks: [
       {
-        id: 21,
+        id: uuidv4(),
         title: "Holiday Season",
         route: "/kids/new-arrivals/holiday-season",
         cName: "dropdown-links",
@@ -17,7 +18,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image",
       },
       {
-        id: 31,
+        id: uuidv4(),
         title: "Sustainable Style",
         route: "/men/new-arrivals/sustainable-style",
         cName: "dropdown-links ",
@@ -29,14 +30,14 @@ const INITIAL_STATE = [
   },
   //!==================================================================
   {
-    id: 2,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/kids/boys",
     title: "Boys",
     dropdownLinks: [
       {
-        id: 12,
+        id: uuidv4(),
         title: "Coats & Jackets",
         route: "/kids/boys/coats-jackets",
         cName: "dropdown-links",
@@ -45,7 +46,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 22,
+        id: uuidv4(),
         title: "Jeans",
         route: "/kids/boys/jeans",
         cName: "dropdown-links",
@@ -54,7 +55,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "T-shirts",
         route: "/kids/boys/t-shirts",
         cName: "dropdown-links",
@@ -63,7 +64,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 52,
+        id: uuidv4(),
         title: "Shoes & Accessories",
         route: "/kids/boys/shoes-accessories",
         cName: "dropdown-links",
@@ -72,7 +73,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 62,
+        id: uuidv4(),
         title: "Shirts",
         route: "/kids/boys/shirts",
         cName: "dropdown-links",
@@ -81,7 +82,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 72,
+        id: uuidv4(),
         title: "Shorts",
         route: "/kids/boys/shorts",
         cName: "dropdown-links",
@@ -90,7 +91,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 42,
+        id: uuidv4(),
         title: "Underwear & Socks",
         route: "/kids/boys/underwear-socks",
         cName: "dropdown-links",
@@ -102,14 +103,14 @@ const INITIAL_STATE = [
   },
   //!==================================================================
   {
-    id: 3,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/kids/girls",
     title: "Girls",
     dropdownLinks: [
       {
-        id: 31,
+        id: uuidv4(),
         title: "Coats & Jackets",
         route: "/kids/girls/coats-jackets",
         cName: "dropdown-links",
@@ -118,7 +119,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "Dresses",
         route: "/kids/girls/dresses",
         cName: "dropdown-links",
@@ -127,7 +128,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 33,
+        id: uuidv4(),
         title: "Sweatshirts & Hoodies",
         route: "/kids/girls/sweatshirts-hoodies",
         cName: "dropdown-links",
@@ -137,7 +138,7 @@ const INITIAL_STATE = [
       },
 
       {
-        id: 34,
+        id: uuidv4(),
         title: "Jeans",
         route: "/kids/gils/jeans",
         cName: "dropdown-links",
@@ -146,7 +147,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 35,
+        id: uuidv4(),
         title: "Shoes & Accessories",
         route: "/kids/girls/shoes-accessories",
         cName: "dropdown-links",
@@ -157,14 +158,14 @@ const INITIAL_STATE = [
     ],
   },
   {
-    id: 4,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/kids/babies",
     title: "Babies",
     dropdownLinks: [
       {
-        id: 41,
+        id: uuidv4(),
         title: "Boys",
         route: "/kids/babies/boys",
         cName: "dropdown-links",
@@ -173,7 +174,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 42,
+        id: uuidv4(),
         title: "Girls",
         route: "/kids/babies/girls",
         cName: "dropdown-links",

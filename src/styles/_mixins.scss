@@ -73,6 +73,10 @@
   font-size: $button-font-desk !important;
   padding: $button-padding-desk !important;
   font-weight: 600 !important;
+  @include respond(phone) {
+    font-size: 3.6rem !important;
+    padding: 2rem 4rem !important;
+  }
 
   &:hover {
     color: $color-black !important;

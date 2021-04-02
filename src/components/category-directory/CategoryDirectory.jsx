@@ -6,8 +6,8 @@ import PopUpModal from "../pop-up-modal/PopUpModal";
 
 //! =============================================================================
 const CategoryDirectory = ({ items, title, subTitle, match }) => {
-  const [selectSmall, setSelectSmall] = useState(true);
-  const [selectBig, setSelectBig] = useState(false);
+  const [selectSmall, setSelectSmall] = useState(false);
+  const [selectBig, setSelectBig] = useState(true);
 
   const handleSmallGrid = () => {
     setSelectSmall(true);
@@ -47,7 +47,13 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
       >
         {items.map((item) => (
           <Fragment key={item.id}>
-            <div className="category-directory__card">
+            <div
+              className={
+                smallGrid
+                  ? "category-directory__card grid-card-big"
+                  : "category-directory__card grid-card-small"
+              }
+            >
               <img
                 className="category-directory__card--image"
                 src={item.imgSrc}
@@ -56,7 +62,13 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
 
               <div key={item.id} className="category-directory__card--pop-up">
                 <div className="category-directory__card--pop-up__size-container">
-                  <div className="category-directory__card--text-flex">
+                  <div
+                    className={
+                      smallGrid
+                        ? "category-directory__card--text-flex card-small-text"
+                        : "category-directory__card--text-flex card-big-text"
+                    }
+                  >
                     <span className="category-directory__card--text-flex__left">
                       {item.title}
                     </span>
@@ -64,7 +76,13 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
                       {item.price} €
                     </span>
                   </div>
-                  <div className="category-directory__card--pop-up__size-container--size-symbol">
+                  <div
+                    className={
+                      smallGrid
+                        ? "category-directory__card--pop-up__size-container--size-symbol small-symbol-grid"
+                        : "category-directory__card--pop-up__size-container--size-symbol"
+                    }
+                  >
                     <h2 className="category-directory__card--pop-up__size-container--size-symbol__text">
                       AVAILABLE SIZES
                     </h2>

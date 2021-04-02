@@ -8,10 +8,17 @@
   padding-top: 4rem;
   &__sub-title {
     @include page-subtitle;
+    @include respond(phone) {
+      margin-top: 9rem;
+      font-size: 4.5rem;
+    }
   }
   &__title {
     @include page-title;
     margin-bottom: 2rem;
+    @include respond(phone) {
+      font-size: 5rem;
+    }
   }
 
   &__top-navbar {
@@ -50,17 +57,14 @@
   }
   &__items-container {
     width: 100%;
+    height: 100%;
   }
   &__card {
-    min-height: 80rem;
-    max-height: calc(
-      100vh - #{$navbar-height-desktop} - 6rem - 10rem - 4rem - 2rem
-    );
     overflow: hidden;
     position: relative;
+    height: 100%;
+    width: 100%;
     @include respond(phone) {
-      min-height: 60rem;
-      max-height: calc(100vh - 50rem);
       box-shadow: $shadow-soft;
     }
     &:hover &--pop-up {
@@ -71,7 +75,7 @@
       color: white;
 
       background-color: rgba($color: #000000, $alpha: 0.8);
-      backdrop-filter: blur(2rem);
+      backdrop-filter: blur(0.5rem);
 
       font-size: 2rem;
       padding: 1rem 3rem;
@@ -82,7 +86,11 @@
       transition: all 0.2s ease;
       @include respond(phone) {
         font-size: 4rem;
-        margin-top: 90%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba($color: #000000, $alpha: 0.5);
       }
 
       &:hover {
@@ -137,10 +145,14 @@
           height: 7%;
           border-bottom: 1px solid $color-black;
           @include respond(phone) {
-            top: 88%;
-            height: 10%;
+            position: absolute;
+            top: 86%;
+            left: 0;
+            bottom: 0;
+            height: 15%;
             font-size: 3.2rem;
             border-bottom: none;
+            padding-bottom: 2rem;
           }
           &__text {
             font-size: 1.6rem;
@@ -149,6 +161,7 @@
             font-family: $font-headers;
             @include respond(phone) {
               font-size: 2.4rem;
+              padding-top: 2rem;
             }
           }
           &__flex {
@@ -170,8 +183,7 @@
       transition: transform 0.4s linear;
       @include respond(phone) {
         transform: scale(0.9);
-
-        margin-top: 5rem;
+        margin-top: 8rem;
       }
     }
     &:hover &--pop-up {
@@ -185,7 +197,7 @@
     }
     &--text-flex {
       position: absolute;
-      top: 0;
+      top: -0.5%;
       left: 0;
       margin-bottom: 0;
       background-color: rgba($color: #fff, $alpha: 1);
@@ -203,12 +215,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: auto;
-        background-color: rgba($color: white, $alpha: 0.95);
+        height: 15%;
       }
 
       &__left {
         @include item-text;
+        text-transform: uppercase;
         @include respond(phone) {
           font-size: 3.2rem;
         }
@@ -224,12 +236,29 @@
     }
   }
 }
+.card-small-text {
+  height: 10%;
+}
+
+.small-symbol-grid {
+  top: 90%;
+  height: 10%;
+}
+
+.grid-card-small {
+  min-height: 80rem;
+}
+.grid-card-big {
+  min-height: 75vh;
+}
+
 .small-grid {
   display: grid;
   column-gap: 2rem;
   row-gap: 4rem;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(52rem, 1fr));
+  grid-template-rows: repeat(auto-fit, 75vh);
 }
 .big-grid {
   display: grid;
@@ -237,6 +266,7 @@
   row-gap: 4rem;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-rows: repeat(auto-fit, 80rem);
 }
 .active-grid-icon-small {
   color: $color-black;

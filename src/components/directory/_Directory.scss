@@ -33,14 +33,14 @@
         object-position: 22% top;
         @include respond(phone) {
           margin-right: 1%;
-          object-position: 23.5% top;
+          // object-position: 23.5% top;
         }
       }
       &__man {
         object-position: 83% top;
         @include respond(phone) {
           margin-left: 1%;
-          object-position: 81% top;
+          // object-position: 81% top;
         }
       }
       &__kids {
@@ -48,6 +48,9 @@
       }
       &__gifts {
         object-position: left center;
+        @include respond(phone) {
+          object-position: 15% center;
+        }
       }
     }
     &--central-part {

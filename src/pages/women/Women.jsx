@@ -104,6 +104,36 @@ function Women({ womenLinkData, womenShopData }) {
             )}
           />
         ))}
+        {womenShopData.bagsAccessories.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={(props) => (
+              <CategoryDirectory
+                id={el.id}
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
+        {womenShopData.shoes.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={(props) => (
+              <CategoryDirectory
+                id={el.id}
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
       </Switch>
     </div>
   );

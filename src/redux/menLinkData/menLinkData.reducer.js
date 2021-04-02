@@ -1,6 +1,7 @@
+const { v4: uuidv4 } = require("uuid");
 const INITIAL_STATE = [
   {
-    id: 1,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/men/new-arrivals",
@@ -8,7 +9,7 @@ const INITIAL_STATE = [
 
     dropdownLinks: [
       {
-        id: 11,
+        id: uuidv4(),
         title: "FEL!NA COLLECTION",
         route: "/men/new-arrivals/felina-collection",
         cName: "dropdown-links dropdown-links__important",
@@ -17,7 +18,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 21,
+        id: uuidv4(),
         title: "Holiday Looks",
         route: "/men/new-arrivals/holiday-looks",
         cName: "dropdown-links",
@@ -26,7 +27,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image",
       },
       {
-        id: 31,
+        id: uuidv4(),
         title: "Sustainable Style",
         route: "/men/new-arrivals/sustainable-style",
         cName: "dropdown-links ",
@@ -37,14 +38,14 @@ const INITIAL_STATE = [
     ],
   },
   {
-    id: 2,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/men/clothing",
     title: "Clothing",
     dropdownLinks: [
       {
-        id: 12,
+        id: uuidv4(),
         title: "Coats & Jackets",
         route: "/men/clothing/coats-jackets",
         cName: "dropdown-links",
@@ -53,7 +54,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 22,
+        id: uuidv4(),
         title: "Jeans",
         route: "/men/clothing/jeans",
         cName: "dropdown-links",
@@ -62,7 +63,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "T-shirts",
         route: "/men/clothing/t-shirts",
         cName: "dropdown-links",
@@ -71,7 +72,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 42,
+        id: uuidv4(),
         title: "Suits",
         route: "/men/clothing/suits",
         cName: "dropdown-links",
@@ -80,7 +81,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 52,
+        id: uuidv4(),
         title: "Sweatshirts & Hoodies",
         route: "/men/clothing/sweatshirts-hoodies",
         cName: "dropdown-links",
@@ -89,7 +90,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 62,
+        id: uuidv4(),
         title: "Shirts",
         route: "/men/clothing/shirts",
         cName: "dropdown-links",
@@ -98,7 +99,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 72,
+        id: uuidv4(),
         title: "Shorts",
         route: "/men/clothing/shorts",
         cName: "dropdown-links",
@@ -107,7 +108,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 82,
+        id: uuidv4(),
         title: "Underwear",
         route: "/men/clothing/underwear",
         cName: "dropdown-links",
@@ -118,14 +119,14 @@ const INITIAL_STATE = [
     ],
   },
   {
-    id: 3,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/men/bags-accesories",
     title: "Bags & Accessories",
     dropdownLinks: [
       {
-        id: 31,
+        id: uuidv4(),
         title: "Sunglasses",
         route: "/men/bags-accesories/sunglasses",
         cName: "dropdown-links",
@@ -134,7 +135,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "Backpacks",
         route: "/men/bags-accesories/backpacks",
         cName: "dropdown-links",
@@ -143,7 +144,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 33,
+        id: uuidv4(),
         title: "Watches",
         route: "/men/bags-accesories/watches",
         cName: "dropdown-links",
@@ -152,7 +153,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 34,
+        id: uuidv4(),
         title: "Belts",
         route: "/men/bags-accesories/belts",
         cName: "dropdown-links",
@@ -163,14 +164,14 @@ const INITIAL_STATE = [
     ],
   },
   {
-    id: 4,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/men/shoes",
     title: "Shoes",
     dropdownLinks: [
       {
-        id: 41,
+        id: uuidv4(),
         title: "Boots",
         route: "/men/shoes/boots",
         cName: "dropdown-links",
@@ -179,7 +180,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 42,
+        id: uuidv4(),
         title: "Sneakers",
         route: "/men/shoes/sneakers",
         cName: "dropdown-links",
@@ -188,7 +189,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 43,
+        id: uuidv4(),
         title: "Formal Shoes",
         route: "/men/shoes/formal-shoes",
         cName: "dropdown-links",

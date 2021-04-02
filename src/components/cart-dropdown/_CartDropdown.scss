@@ -1,7 +1,6 @@
 .cart-dropdown {
   position: fixed;
 
-  @include soft-shadow;
   background-color: $color-white;
   top: calc(#{$top-navbar-desktop} + 0.5rem);
   right: 5rem;
@@ -13,11 +12,19 @@
   overflow: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-
+  box-shadow: 0 2.8px 1.4px rgba(0, 0, 0, 0.028),
+    0 6.7px 3.3px rgba(0, 0, 0, 0.04), 0 12.5px 6.3px rgba(0, 0, 0, 0.05),
+    0 22.3px 11.2px rgba(0, 0, 0, 0.06), 0 41.8px 20.9px rgba(0, 0, 0, 0.072),
+    0 100px 50px rgba(0, 0, 0, 0.1);
+  border: 1px solid $color-border;
   @include respond(phone) {
-    top: calc(1rem + #{$navbar-height-mobile});
-    min-height: 15rem;
-    width: 90%;
+    top: $navbar-height-mobile;
+    right: 0;
+
+    max-height: calc(100vh - #{$navbar-height-mobile});
+    width: 100%;
+
+    padding: 5rem;
   }
   &::-webkit-scrollbar {
     display: none;
@@ -36,7 +43,8 @@
       &__icon {
         font-size: 2.4rem;
         @include respond(phone) {
-          font-size: 4rem;
+          font-size: 10rem;
+          margin-right: -2rem;
         }
         cursor: pointer;
         transition: all 0.4s ease-in-out;
@@ -55,6 +63,10 @@
       padding-bottom: 0.5rem;
       color: $color-grey-dark;
       border-bottom: 1px solid $color-grey-dark;
+      @include respond(phone) {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
     }
     &--subtotal {
       padding-top: 0.5rem;
@@ -68,6 +80,10 @@
       letter-spacing: 0.1rem;
       color: $color-black;
       margin-bottom: 2rem;
+      @include respond(phone) {
+        width: 100%;
+        font-size: 3.6rem;
+      }
 
       &__price {
         font-family: $font-headers;
@@ -75,6 +91,9 @@
         letter-spacing: 0.15rem;
         font-weight: 800;
         font-size: 1.8rem;
+        @include respond(phone) {
+          font-size: 3.6rem;
+        }
       }
     }
   }
@@ -93,12 +112,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond(phone) {
+      height: 40rem;
+    }
     &--title {
       font-family: $font-special;
       text-align: center;
       font-weight: 800;
       @include respond(phone) {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
     &--icon {
@@ -109,7 +131,7 @@
       left: 50%;
       transform: translateX(-50%);
       @include respond(phone) {
-        top: -50%;
+        top: 50%;
       }
     }
   }

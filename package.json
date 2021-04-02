@@ -5,6 +5,7 @@
   "dependencies": {
     "chokidar": "^3.0.2",
     "cloudinary-react": "^1.6.7",
+    "core-js": "3",
     "firebase": "^7.24.0",
     "gsap": "^3.5.1",
     "hamburger-react": "^2.3.0",
@@ -23,6 +24,7 @@
     "redux-persist": "^6.0.0",
     "reselect": "^4.0.0",
     "sass": "^1.32.8",
+    "uuid": "^8.3.2",
     "yarn": "^1.22.10"
   },
   "scripts": {

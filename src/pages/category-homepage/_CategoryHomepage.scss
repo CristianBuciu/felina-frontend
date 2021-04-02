@@ -4,6 +4,9 @@
 
   margin: 0rem auto;
   padding-top: 4rem;
+  @include respond(phone) {
+    margin-top: 18rem;
+  }
 }
 
 .categories-flex {
@@ -37,7 +40,9 @@
     width: 50%;
     height: calc(100% - 2rem);
     @include respond(phone) {
-      right: 0 !important;
+      height: calc(100% - 4rem);
+      margin-right: -2rem;
+      margin-left: -2rem;
     }
   }
 }

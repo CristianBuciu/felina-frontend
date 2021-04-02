@@ -1,6 +1,7 @@
+const { v4: uuidv4 } = require("uuid");
 const INITIAL_STATE = [
   {
-    id: 1,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/gifts/for-her",
@@ -8,7 +9,7 @@ const INITIAL_STATE = [
 
     dropdownLinks: [
       {
-        id: 11,
+        id: uuidv4(),
         title: "Winter Warmers",
         route: "/gifts/for-her/winter-warmers",
         cName: "dropdown-links",
@@ -17,7 +18,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 21,
+        id: uuidv4(),
         title: "Stocking Stuffers",
         route: "/gifts/for-her/stocking-stuffers",
         cName: "dropdown-links",
@@ -29,14 +30,14 @@ const INITIAL_STATE = [
   },
   //! =============================================================================
   {
-    id: 2,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/gifts/for-him",
     title: "For Him",
     dropdownLinks: [
       {
-        id: 12,
+        id: uuidv4(),
         title: "Winter Warmers",
         route: "/gifts/for-him/winter-warmers",
         cName: "dropdown-links",
@@ -45,7 +46,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
-        id: 22,
+        id: uuidv4(),
         title: "Stocking Stuffers",
         route: "/gifts/for-him/stocking-stuffers",
         cName: "dropdown-links",
@@ -57,14 +58,14 @@ const INITIAL_STATE = [
   },
   //! =============================================================================
   {
-    id: 3,
+    id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
     route: "/gifts/for-kids",
     title: "For Kids",
     dropdownLinks: [
       {
-        id: 31,
+        id: uuidv4(),
         title: "Winter Warmers",
         route: "/women/bags-accessories/bags",
         cName: "dropdown-links",
@@ -73,7 +74,7 @@ const INITIAL_STATE = [
         imageClassName: "most-wanted-image ",
       },
       {
-        id: 32,
+        id: uuidv4(),
         title: "Stocking Stuffers",
         route: "/women/bags-accessories/watches",
         cName: "dropdown-links",
