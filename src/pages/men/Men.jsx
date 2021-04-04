@@ -1,14 +1,19 @@
+//! Core packages
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+
+//! Redux imports
+import { connect } from "react-redux";
+import { selectMenLinkDataSection } from "../../redux/menLinkData/menLinkData.selectors";
+import { createStructuredSelector } from "reselect";
+import { selectMenShopData } from "../../redux/menShopData/menShopData.selector";
+
+//! Components
 import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
 import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
 import CategoryHomepage from "../category-homepage/CategoryHomepage";
 
-import { connect } from "react-redux";
-import { selectMenLinkDataSection } from "../../redux/menLinkData/menLinkData.selectors";
-import { createStructuredSelector } from "reselect";
-
-function Men({ menLinkData }) {
+function Men({ menLinkData, menShopData }) {
   return (
     <div>
       <div className="categories-flex">
@@ -43,11 +48,62 @@ function Men({ menLinkData }) {
             />
           )}
         />
-        <Route
-          exact
-          path="/men/new-arrivals/felina-collection"
-          render={() => <CategoryDirectory />}
-        />
+        {menShopData.newArrival.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={() => (
+              <CategoryDirectory
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
+        {menShopData.clothing.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={() => (
+              <CategoryDirectory
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
+        {menShopData.bagsAccessories.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={() => (
+              <CategoryDirectory
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
+        {menShopData.shoes.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={() => (
+              <CategoryDirectory
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
       </Switch>
     </div>
   );
@@ -55,6 +111,7 @@ function Men({ menLinkData }) {
 
 const mapStateToProps = createStructuredSelector({
   menLinkData: selectMenLinkDataSection,
+  menShopData: selectMenShopData,
 });
 
 export default connect(mapStateToProps)(Men);

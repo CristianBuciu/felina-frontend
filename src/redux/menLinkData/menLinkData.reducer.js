@@ -14,16 +14,16 @@ const INITIAL_STATE = [
         route: "/men/new-arrivals/felina-collection",
         cName: "dropdown-links dropdown-links__important",
         imgSrc:
-          "https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1GL55WDU90-JBLK",
         imageClassName: "most-wanted-image ",
       },
       {
         id: uuidv4(),
-        title: "Holiday Looks",
-        route: "/men/new-arrivals/holiday-looks",
+        title: "Denim Season",
+        route: "/men/new-arrivals/denim-season",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3289663/pexels-photo-3289663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1GXN1D4ED1-BDLD-ALT2",
         imageClassName: "most-wanted-image",
       },
       {
@@ -32,7 +32,7 @@ const INITIAL_STATE = [
         route: "/men/new-arrivals/sustainable-style",
         cName: "dropdown-links ",
         imgSrc:
-          "https://images.pexels.com/photos/4876309/pexels-photo-4876309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M0BH25WDA00-TWHT",
         imageClassName: "most-wanted-image",
       },
     ],
@@ -50,7 +50,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/coats-jackets",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/1036643/pexels-photo-1036643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M0BL03R0O00-JBLK-ALT1",
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
@@ -59,7 +59,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/jeans",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1516826957135-700dedea698c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1RAN1D4B74-TGEN-ALT1",
         imageClassName: "most-wanted-image",
       },
       {
@@ -68,7 +68,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/t-shirts",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/2560894/pexels-photo-2560894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M0RI32R6CS1-G011",
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
@@ -77,7 +77,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/suits",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/2955375/pexels-photo-2955375.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto/v1/EU/Style/ECOMM/1GH2012013Z-DKNB-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
@@ -86,7 +86,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/sweatshirts-hoodies",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M0RQ02R44Q9-G011-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
@@ -95,7 +95,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/shirts",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1582851758630-35282b9610e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1GH35RD4ZB-P1P5-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
@@ -104,7 +104,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/shorts",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1601141256817-c60897f2776a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1GD55K68I1-G8DA-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
@@ -113,7 +113,7 @@ const INITIAL_STATE = [
         route: "/men/clothing/underwear",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1586204861018-14c36bef0bdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/U97G01JR003-F017",
         imageClassName: "most-wanted-image ",
       },
     ],
@@ -122,43 +122,43 @@ const INITIAL_STATE = [
     id: uuidv4(),
     activeClass: "is-active",
     cName: "category-links",
-    route: "/men/bags-accesories",
+    route: "/men/bags-accessories",
     title: "Bags & Accessories",
     dropdownLinks: [
       {
         id: uuidv4(),
         title: "Sunglasses",
-        route: "/men/bags-accesories/sunglasses",
+        route: "/men/bags-accessories/sunglasses",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1497551060073-4c5ab6435f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/G0002661QQQ-08B-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
         id: uuidv4(),
-        title: "Backpacks",
-        route: "/men/bags-accesories/backpacks",
+        title: "Wallets",
+        route: "/men/bags-accessories/wallets",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/704805/pexels-photo-704805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/SMVEZLLEA20-BLA",
         imageClassName: "most-wanted-image ",
       },
       {
         id: uuidv4(),
         title: "Watches",
-        route: "/men/bags-accesories/watches",
+        route: "/men/bags-accessories/watches",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/WW0799FMSWC-G2",
         imageClassName: "most-wanted-image ",
       },
       {
         id: uuidv4(),
         title: "Belts",
-        route: "/men/bags-accesories/belts",
+        route: "/men/bags-accessories/belts",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1582759959881-307a185233b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/BM7351VIN35-COA",
         imageClassName: "most-wanted-image ",
       },
     ],
@@ -175,8 +175,7 @@ const INITIAL_STATE = [
         title: "Boots",
         route: "/men/shoes/boots",
         cName: "dropdown-links",
-        imgSrc:
-          "https://images.unsplash.com/photo-1520809382381-d95e6364bbdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+        imgSrc: "https://www.armani.com/11/11753174RO_16_r.jpg",
         imageClassName: "most-wanted-image ",
       },
       {
@@ -184,8 +183,7 @@ const INITIAL_STATE = [
         title: "Sneakers",
         route: "/men/shoes/sneakers",
         cName: "dropdown-links",
-        imgSrc:
-          "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        imgSrc: "https://www.armani.com/11/11500114KK_16_r.jpg",
         imageClassName: "most-wanted-image ",
       },
       {
@@ -193,8 +191,7 @@ const INITIAL_STATE = [
         title: "Formal Shoes",
         route: "/men/shoes/formal-shoes",
         cName: "dropdown-links",
-        imgSrc:
-          "https://images.pexels.com/photos/5537815/pexels-photo-5537815.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        imgSrc: "https://www.armani.com/11/11753147LV_16_r.jpg",
         imageClassName: "most-wanted-image ",
       },
     ],

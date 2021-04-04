@@ -1,19 +1,28 @@
+//! Core packages
 import React, { useEffect, useRef } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
-import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
-import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
-import CategoryHomepage from "../category-homepage/CategoryHomepage";
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+//! Redux imports
 import { connect } from "react-redux";
 import { selectWomenLinkDataSection } from "../../redux/womenLinkData/womenLinkData.selectors";
 import { selectWomenShopData } from "../../redux/womenShopData/womenShopData.selectors";
 import { createStructuredSelector } from "reselect";
 
+//! Components
+import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
+import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
+import CategoryHomepage from "../category-homepage/CategoryHomepage";
+
+//! Additional packages
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function Women({ womenLinkData, womenShopData }) {
+  //! Scroll gsap declaration
   const dropdownMenuRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
+
+  //! Use effect
   useEffect(() => {
     const phoneMediaQuery = window.matchMedia(
       "(min-device-width: 320px) and (max-device-width: 480px)"
@@ -39,6 +48,7 @@ function Women({ womenLinkData, womenShopData }) {
       );
     }
   }, []);
+
   return (
     <div>
       <div ref={dropdownMenuRef} className="categories-flex">
