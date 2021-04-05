@@ -54,9 +54,12 @@ const CheckoutItem = ({
         </span>
       </div>
       <h3 className="checkout-page__main--items__table-top--title">
-        <span className="checkout-page__main--items__table-top--title__quantity">
+        <span
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          className="checkout-page__main--items__table-top--title__quantity"
+        >
           {" "}
-          <b>{item.price}</b> €
+          <b>{item.price} &nbsp;€</b>
         </span>
         <span
           onClick={() => clearItem(item)}

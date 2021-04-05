@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10000;
 }
 .navbar-button {
   height: 5rem;
@@ -25,7 +25,22 @@
     justify-content: center;
   }
 }
-
+.sidebar {
+  &__title {
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12rem;
+    font-family: $font-special;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__slogan {
+    font-size: 6rem;
+  }
+}
 .nav-menu {
   position: fixed;
   top: $navbar-height-mobile;
@@ -63,9 +78,9 @@
   height: 6rem;
   text-decoration: none;
   color: $color-grey-dark;
-  width: 95%;
+  width: 90%;
   height: 100%;
-
+  margin: 2rem auto;
   padding: 0.5rem 1.5rem;
 
   border-bottom: 2px solid rgba(170, 170, 170, 0.8);

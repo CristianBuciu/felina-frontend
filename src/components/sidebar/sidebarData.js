@@ -49,6 +49,6 @@ export const SidebarData = [
     path: "/gifts/homepage",
     id: 7,
 
-    cName: "nav-text",
+    cName: "nav-text call-to-action",
   },
 ];

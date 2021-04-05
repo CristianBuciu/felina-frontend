@@ -19,10 +19,21 @@
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+    @include respond(phone) {
+      width: 100%;
+
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20rem;
+    }
   }
   &__title {
     @include page-title;
     margin-top: 2rem;
     margin-bottom: 4rem;
+    @include respond(phone) {
+      margin-top: 12rem;
+      font-size: 8rem;
+    }
   }
 }

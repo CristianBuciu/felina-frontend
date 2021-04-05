@@ -1,7 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const DropdownImages = (props) => {
+  const history = useHistory();
+
+  const clickHandler = () => {
+    props.handler;
+    history.push(props.route);
+  };
   return (
     <div className="dropdown-images-container">
       <img src={props.imgSrc} className={props.imageClassName} alt="" />
@@ -9,12 +16,12 @@ const DropdownImages = (props) => {
         <h2 className="dropdown-images-container__inner--title">
           {props.title}
         </h2>
-        <NavLink
+        <p
+          onClick={clickHandler}
           className="dropdown-images-container__inner--link"
-          to={props.route}
         >
           SHOP NOW
-        </NavLink>
+        </p>
       </div>
     </div>
   );

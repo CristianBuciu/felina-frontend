@@ -20,13 +20,17 @@ function Sidebar({ currentUser }) {
         />
 
         <nav className={`${sidebar ? "nav-menu active" : "nav-menu"}`}>
+          <h1 className="sidebar__title">
+            FEL!NA
+            <span className="sidebar__slogan">Fierce Fashion</span>
+          </h1>
           <ul className="nav-menu__items" onClick={showSidebar}>
             {SidebarData.map((item) => {
               return (
                 <div key={item.id} style={{ width: "100%" }}>
                   <li className="list-item">
                     <Link to={item.path} className={item.cName}>
-                      <span>{item.title}</span>
+                      <span>{item.title} </span>
                     </Link>
                   </li>
                 </div>

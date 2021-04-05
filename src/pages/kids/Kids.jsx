@@ -1,17 +1,58 @@
-import React from "react";
+//! Core
+import React, { useEffect, useRef } from "react";
 import { Switch, Route } from "react-router-dom";
+
+//! Redux
 import { selectKidsLinkDataSection } from "../../redux/kidsLinkData/kidsLinkData.selectors";
-import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
-import CategoryHomepage from "../category-homepage/CategoryHomepage";
-import { Spring } from "react-spring/renderprops.cjs";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import { selectKidsShopData } from "../../redux/kidsShopData/kidsShopData.selector";
+
+//! Components
+import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
+import CategoryHomepage from "../category-homepage/CategoryHomepage";
+import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
+
+//! Extra npm packages
+import { Spring } from "react-spring/renderprops.cjs";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 //! =============================================================================
-function Kids({ kidsLinkData }) {
+function Kids({ kidsLinkData, kidsShopData }) {
+  //! Scroll gsap declaration
+  const dropdownMenuRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+
+  //! Use effect
+  useEffect(() => {
+    const phoneMediaQuery = window.matchMedia(
+      "(min-device-width: 320px) and (max-device-width: 480px)"
+    );
+    if (!phoneMediaQuery.matches) {
+      gsap.to(
+        dropdownMenuRef.current,
+        {
+          scrollTrigger: {
+            trigger: dropdownMenuRef.current,
+            start: "top top+=50",
+            end: "bottom top",
+            toggleActions: "play none none restart",
+            // markers: true,
+            scrub: 0.5,
+          },
+
+          y: "-125%",
+
+          scaleY: 0.95,
+        },
+        []
+      );
+    }
+  }, []);
   return (
     <div>
-      <div className="categories-flex">
+      <div ref={dropdownMenuRef} className="categories-flex">
         {kidsLinkData.map((e) => (
           <DropdownCustomMenu
             key={e.id}
@@ -43,6 +84,34 @@ function Kids({ kidsLinkData }) {
             />
           )}
         />
+        {kidsShopData.boys.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={() => (
+              <CategoryDirectory
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
+        {kidsShopData.girls.subcategories.map((el) => (
+          <Route
+            key={el.id}
+            exact
+            path={el.route}
+            render={() => (
+              <CategoryDirectory
+                subTitle={el.subTitle}
+                title={el.title}
+                items={el.items}
+              />
+            )}
+          />
+        ))}
       </Switch>
     </div>
   );
@@ -50,6 +119,7 @@ function Kids({ kidsLinkData }) {
 
 const mapStateToProps = createStructuredSelector({
   kidsLinkData: selectKidsLinkDataSection,
+  kidsShopData: selectKidsShopData,
 });
 
 export default connect(mapStateToProps)(Kids);

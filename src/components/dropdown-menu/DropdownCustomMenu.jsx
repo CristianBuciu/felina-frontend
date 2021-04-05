@@ -77,6 +77,7 @@ const DropdownCustomMenu = (props) => {
           <div className="dropdown-items__image-container">
             {randomImages.map((el) => (
               <DropdownImages
+                handler={closeMenuHandler}
                 key={el.id}
                 route={el.route}
                 title={el.title}

@@ -24,41 +24,46 @@ const Checkout = ({
   const itemsRef = useRef(null);
   const itemsTableTopRef = useRef(null);
   useEffect(() => {
-    gsap.to(
-      purchaseRef.current,
-      {
-        scrollTrigger: {
-          trigger: itemsRef.current,
-          start: "top top+=10%",
-          end: "bottom",
-
-          pin: purchaseRef.current,
-          // markers: true,
-          scrub: 1,
-        },
-
-        duration: 1,
-      },
-      []
+    const phoneMediaQuery = window.matchMedia(
+      "(min-device-width: 320px) and (max-device-width: 480px)"
     );
+    if (!phoneMediaQuery.matches) {
+      gsap.to(
+        purchaseRef.current,
+        {
+          scrollTrigger: {
+            trigger: itemsRef.current,
+            start: "top top+=10%",
+            end: "bottom",
 
-    gsap.to(
-      itemsTableTopRef.current,
-      {
-        scrollTrigger: {
-          trigger: itemsTableTopRef.current,
-          start: "top top+=4.5%",
-          end: "bottom -100%",
-          toggleActions: "play none none restart",
-          pin: true,
-          // markers: true,
-          // scrub: 1,
+            pin: purchaseRef.current,
+            // markers: true,
+            scrub: 1,
+          },
+
+          duration: 1,
         },
+        []
+      );
 
-        duration: 1,
-      },
-      []
-    );
+      gsap.to(
+        itemsTableTopRef.current,
+        {
+          scrollTrigger: {
+            trigger: itemsTableTopRef.current,
+            start: "top top+=3.8%",
+            end: "bottom -100%",
+            toggleActions: "play none none restart",
+            pin: true,
+            // markers: true,
+            // scrub: 1,
+          },
+
+          duration: 1,
+        },
+        []
+      );
+    }
   });
   function roundToTwo(num) {
     return +(Math.round(num + "e+2") + "e-2");
@@ -79,10 +84,10 @@ const Checkout = ({
             </span>
           </p>
         ) : (
-            <p className="checkout-page__greeting-message">
-              Hello stranger. You should log in so you can finish your purchase.
-            </p>
-          )}
+          <p className="checkout-page__greeting-message">
+            Hello stranger. You should log in so you can finish your purchase.
+          </p>
+        )}
       </div>
 
       <div className="checkout-page__main">
@@ -121,7 +126,7 @@ const Checkout = ({
           <div className="checkout-page__main--price-details__flex">
             <span>
               Shipping <br />{" "}
-              <i style={{ color: "black", fontSize: "1.6rem" }}>
+              <i className="checkout-page__shipping-details">
                 Standard Delivery in 4-6 working days
               </i>
             </span>
@@ -132,22 +137,24 @@ const Checkout = ({
           </div>
           <hr />
           <div className="checkout-page__main--price-details__flex">
-            <span style={{ fontSize: "2rem" }}>
+            <span>
               <b>Total</b>
             </span>
-            <span style={{ fontSize: "2rem" }}>
+            <span>
               <b>{roundToTwo(subtotal)} €</b>
             </span>
           </div>
-          <div
-
-
-          >
-            <div style={{ color: "red", fontSize: "1.2rem", marginBottom: "2rem" }}>
+          <div>
+            <div className="checkout-page__card-information">
               <p>*Please use the following test credit card for payments*</p>
-              <p>4242 4242 4242 4242 <br /> Exp: 01/20 <br /> CVV:123 </p>
+              <p>
+                4242 4242 4242 4242 <br /> Exp: 01/20 <br /> CVV:123{" "}
+              </p>
             </div>
-            <StripeCheckoutButton className="checkout-page__main--price-details__btn" price={roundToTwo(subtotal)} />
+            <StripeCheckoutButton
+              className="checkout-page__main--price-details__btn"
+              price={roundToTwo(subtotal)}
+            />
           </div>
         </div>
       </div>

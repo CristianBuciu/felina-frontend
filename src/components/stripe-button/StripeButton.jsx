@@ -20,7 +20,7 @@ const StripeCheckoutButton = ({ price }) => {
       panelLabel="PAY NOW"
       token={onToken}
       stripeKey={publishebleKey}
-      currency="eur"
+      currency="EUR"
     />
   );
 };

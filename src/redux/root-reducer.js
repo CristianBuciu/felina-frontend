@@ -10,6 +10,8 @@ import kidsLinkDataReducer from "./kidsLinkData/kidsLinkData.reducer";
 import giftsLinkDataReducer from "./giftsLinkData/giftsLinkData.reducer";
 import womenShopReducer from "./womenShopData/womenShopData.reducer";
 import menShopReducer from "./menShopData/menShopData.reducer.js";
+import kidsShopReducer from "./kidsShopData/kidsShopData.reducer";
+import giftsShopReducer from "./giftsShopData/giftsShopData.reducer";
 const persistConfig = {
   key: "root",
   storage,
@@ -25,6 +27,8 @@ const rootReducer = combineReducers({
   giftsLinkData: giftsLinkDataReducer,
   womenShop: womenShopReducer,
   menShop: menShopReducer,
+  kidsShop: kidsShopReducer,
+  giftsShop: giftsShopReducer,
 });
 
 export default persistReducer(persistConfig, rootReducer);

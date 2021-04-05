@@ -1,5 +1,5 @@
 //! Core packages
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Switch, Route } from "react-router-dom";
 
 //! Redux imports
@@ -13,10 +13,44 @@ import CategoryDirectory from "../../components/category-directory/CategoryDirec
 import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
 import CategoryHomepage from "../category-homepage/CategoryHomepage";
 
+//! Additional packages
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function Men({ menLinkData, menShopData }) {
+  //! Scroll gsap declaration
+  const dropdownMenuRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+
+  //! Use effect
+  useEffect(() => {
+    const phoneMediaQuery = window.matchMedia(
+      "(min-device-width: 320px) and (max-device-width: 480px)"
+    );
+    if (!phoneMediaQuery.matches) {
+      gsap.to(
+        dropdownMenuRef.current,
+        {
+          scrollTrigger: {
+            trigger: dropdownMenuRef.current,
+            start: "top top+=50",
+            end: "bottom top",
+            toggleActions: "play none none restart",
+            // markers: true,
+            scrub: 0.5,
+          },
+
+          y: "-125%",
+
+          scaleY: 0.95,
+        },
+        []
+      );
+    }
+  }, []);
   return (
     <div>
-      <div className="categories-flex">
+      <div ref={dropdownMenuRef} className="categories-flex">
         {menLinkData.map((e) => (
           <DropdownCustomMenu
             key={e.id}

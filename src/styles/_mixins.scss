@@ -75,7 +75,8 @@
   font-weight: 600 !important;
   @include respond(phone) {
     font-size: 3.6rem !important;
-    padding: 2rem 4rem !important;
+    padding: 2rem 1rem !important;
+    font-weight: 400 !important;
   }
 
   &:hover {

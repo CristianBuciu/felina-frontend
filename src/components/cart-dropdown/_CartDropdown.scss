@@ -104,6 +104,9 @@
     padding: 1rem 2rem;
     margin-top: auto;
     margin-bottom: 2rem;
+    @include respond(phone) {
+      padding: 2rem 4rem !important;
+    }
   }
   &__empty {
     position: relative;

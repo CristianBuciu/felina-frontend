@@ -10,20 +10,20 @@ const INITIAL_STATE = [
     dropdownLinks: [
       {
         id: uuidv4(),
-        title: "Winter Warmers",
-        route: "/gifts/for-her/winter-warmers",
+        title: "Accessories",
+        route: "/gifts/for-her/accessories",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/3774980/pexels-photo-3774980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/JUBE20055JW-GL-ALT1",
         imageClassName: "most-wanted-image ",
       },
       {
         id: uuidv4(),
-        title: "Stocking Stuffers",
-        route: "/gifts/for-her/stocking-stuffers",
+        title: "Bags",
+        route: "/gifts/for-her/bags",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HWFS7580190-SPF-ALT1",
         imageClassName: "most-wanted-image",
       },
     ],
@@ -38,52 +38,25 @@ const INITIAL_STATE = [
     dropdownLinks: [
       {
         id: uuidv4(),
-        title: "Winter Warmers",
-        route: "/gifts/for-him/winter-warmers",
+        title: "Accessories",
+        route: "/gifts/for-him/accessories",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/157842/bezel-hairstyle-man-mode-157842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/G0001252QQQ-08V",
         imageClassName: "most-wanted-image most-wanted-image__jacket",
       },
       {
         id: uuidv4(),
-        title: "Stocking Stuffers",
-        route: "/gifts/for-him/stocking-stuffers",
+        title: "Bags",
+        route: "/gifts/for-him/bags",
         cName: "dropdown-links",
         imgSrc:
-          "https://images.pexels.com/photos/2442893/pexels-photo-2442893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/HMVEZLP1226-BLA-ALT1",
         imageClassName: "most-wanted-image",
       },
     ],
   },
   //! =============================================================================
-  {
-    id: uuidv4(),
-    activeClass: "is-active",
-    cName: "category-links",
-    route: "/gifts/for-kids",
-    title: "For Kids",
-    dropdownLinks: [
-      {
-        id: uuidv4(),
-        title: "Winter Warmers",
-        route: "/women/bags-accessories/bags",
-        cName: "dropdown-links",
-        imgSrc:
-          "https://images.pexels.com/photos/3934014/pexels-photo-3934014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        imageClassName: "most-wanted-image ",
-      },
-      {
-        id: uuidv4(),
-        title: "Stocking Stuffers",
-        route: "/women/bags-accessories/watches",
-        cName: "dropdown-links",
-        imgSrc:
-          "https://images.pexels.com/photos/1842182/pexels-photo-1842182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        imageClassName: "most-wanted-image ",
-      },
-    ],
-  },
 ];
 
 const giftsLinkDataReducer = (state = INITIAL_STATE, action) => {
