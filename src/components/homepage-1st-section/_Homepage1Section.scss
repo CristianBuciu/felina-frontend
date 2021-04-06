@@ -1,9 +1,12 @@
-.directory-menu {
+.homepage-1st-section {
   width: 100%;
   height: calc(100vh - #{$navbar-height-desktop} - 4rem);
+  min-height: 740px;
   padding: $page-padding;
   @include respond(phone) {
     padding: 0;
+    min-height: 740px;
+    height: calc(100vh - #{$navbar-height-mobile} - 12rem);
   }
 
   &--grey {
@@ -14,7 +17,7 @@
     }
   }
   &__top-part {
-    height: 98%;
+    height: 100%;
 
     display: flex;
     align-items: center;

@@ -16,7 +16,7 @@ import CategoryHomepage from "../category-homepage/CategoryHomepage";
 //! Additional packages
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { v4 as uuidv4 } from "uuid";
 function Women({ womenLinkData, womenShopData }) {
   //! Scroll gsap declaration
   const dropdownMenuRef = useRef(null);
@@ -75,12 +75,37 @@ function Women({ womenLinkData, womenShopData }) {
               imgAlt="women"
               initialFlexPosition="flex-start"
               title="WOMEN"
-              className="directory-menu__top-part--image directory-menu__top-part--image__women"
-              style={{
-                right: "2rem",
-                backgroundImage:
-                  "linear-gradient(to left,rgba(0, 0, 0, 0.7),rgba(45, 45, 45, 0.6),rgba(87, 87, 87, 0.4), rgba(133, 133, 133, 0.2), rgba(182, 182, 182, 0.01))",
-              }}
+              className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__women"
+              introTitle="New Arrivals"
+              introLinks={[
+                {
+                  id: uuidv4(),
+                  title: "FEL!NA COLLECTION",
+                  route: "/women/new-arrivals/felina-collection",
+                  cName: "dropdown-links dropdown-links__important",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GGK067068Z-P6K2",
+                  imageClassName: "most-wanted-image ",
+                },
+                {
+                  id: uuidv4(),
+                  title: "Denim Season",
+                  route: "/women/new-arrivals/denim-season",
+                  cName: "dropdown-links",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG1539340Z-BRWA-ALT1",
+                  imageClassName: "most-wanted-image",
+                },
+                {
+                  id: uuidv4(),
+                  title: "Sustainable Style",
+                  route: "/women/new-arrivals/sustainable-style",
+                  cName: "dropdown-links ",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7289543Z-F1Y8-ALT1",
+                  imageClassName: "most-wanted-image",
+                },
+              ]}
             />
           )}
         />

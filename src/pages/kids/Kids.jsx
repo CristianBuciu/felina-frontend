@@ -17,6 +17,7 @@ import CategoryDirectory from "../../components/category-directory/CategoryDirec
 import { Spring } from "react-spring/renderprops.cjs";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { v4 as uuidv4 } from "uuid";
 
 //! =============================================================================
 function Kids({ kidsLinkData, kidsShopData }) {
@@ -75,12 +76,28 @@ function Kids({ kidsLinkData, kidsShopData }) {
               imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080/v1606941388/AdobeStock_177246524-min_aizq8f.jpg"
               imgAlt="kids"
               initialFlexPosition="center"
-              className="directory-menu__top-part--image directory-menu__top-part--image__kids"
-              style={{
-                left: "2rem",
-                backgroundImage:
-                  "linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(45, 45, 45, 0.6),rgba(87, 87, 87, 0.4), rgba(133, 133, 133, 0.2), rgba(182, 182, 182, 0.01))",
-              }}
+              className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__kids"
+              introTitle="Junior Collection"
+              introLinks={[
+                {
+                  id: uuidv4(),
+                  title: "For girls",
+                  route: "/kids/girls/junior",
+                  cName: "dropdown-links",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/J1GI24K6YW1-C448",
+                  imageClassName: "most-wanted-image ",
+                },
+                {
+                  id: uuidv4(),
+                  title: "For boys",
+                  route: "/kids/boys/junior",
+                  cName: "dropdown-links",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/L1RN03WDO30-DEKB",
+                  imageClassName: "most-wanted-image most-wanted-image__jacket",
+                },
+              ]}
             />
           )}
         />

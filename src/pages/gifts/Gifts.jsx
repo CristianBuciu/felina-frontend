@@ -16,6 +16,8 @@ import { selectGiftsShopData } from "../../redux/giftsShopData/giftsShopData.sel
 //! Additional packages
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { v4 as uuidv4 } from "uuid";
+
 //! =============================================================================
 function Gifts({ giftsLinkData, giftsShopData }) {
   //! Scroll gsap declaration
@@ -48,7 +50,7 @@ function Gifts({ giftsLinkData, giftsShopData }) {
     }
   }, []);
   return (
-    <div>
+    <>
       <div ref={dropdownMenuRef} className="categories-flex">
         {giftsLinkData.map((e) => (
           <DropdownCustomMenu
@@ -72,12 +74,28 @@ function Gifts({ giftsLinkData, giftsShopData }) {
               imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080,q_80/v1606860464/shutterstock_739730530-min_ojqmqf.jpg"
               imgAlt="gifts"
               initialFlexPosition="left"
-              className="directory-menu__top-part--image directory-menu__top-part--image__gifts"
-              style={{
-                right: "2rem",
-                backgroundImage:
-                  "linear-gradient(to left,rgba(0, 0, 0, 0.7),rgba(45, 45, 45, 0.6),rgba(87, 87, 87, 0.4), rgba(133, 133, 133, 0.2), rgba(182, 182, 182, 0.01))",
-              }}
+              className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__gifts"
+              introTitle="Accessories Gifts"
+              introLinks={[
+                {
+                  id: uuidv4(),
+                  title: "For Him",
+                  route: "/gifts/for-him/accessories",
+                  cName: "dropdown-links",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/G0001252QQQ-08V",
+                  imageClassName: "most-wanted-image most-wanted-image__jacket",
+                },
+                {
+                  id: uuidv4(),
+                  title: "For Her",
+                  route: "/gifts/for-her/accessories",
+                  cName: "dropdown-links",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/JUBE20055JW-GL-ALT1",
+                  imageClassName: "most-wanted-image ",
+                },
+              ]}
             />
           )}
         />
@@ -110,7 +128,7 @@ function Gifts({ giftsLinkData, giftsShopData }) {
           />
         ))}
       </Switch>
-    </div>
+    </>
   );
 }
 

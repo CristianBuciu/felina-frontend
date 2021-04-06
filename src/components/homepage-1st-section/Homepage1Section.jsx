@@ -35,50 +35,50 @@ const Directory = (props) => {
     );
   }, []);
   return (
-    <div className="directory-menu">
-      <div className="directory-menu--grey"></div>
-      <div className="directory-menu__top-part">
+    <div className="homepage-1st-section">
+      <div className="homepage-1st-section--grey"></div>
+      <div className="homepage-1st-section__top-part">
         <img
           ref={images1Ref}
-          className="directory-menu__top-part--image directory-menu__top-part--image__women"
+          className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__women"
           src="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080/v1606757469/fierce-woman-wide-min_gybxxq.jpg"
           alt="women"
         />
 
         <div
           ref={centralPartRef}
-          className="directory-menu__top-part--central-part"
+          className="homepage-1st-section__top-part--central-part"
         >
           <img
             src={logo}
             alt="logo"
-            className="directory-menu__top-part--central-part__logo"
+            className="homepage-1st-section__top-part--central-part__logo"
           />
-          <h2 className="directory-menu__top-part--central-part__text">
+          <h2 className="homepage-1st-section__top-part--central-part__text">
             FIERCE FASHION <br /> DISCOVER THE COLLECTION
           </h2>
-          <div className="directory-menu__top-part--central-part--buttons-container">
+          <div className="homepage-1st-section__top-part--central-part--buttons-container">
             <Link
-              className="directory-menu__top-part--central-part--buttons-container__button"
+              className="homepage-1st-section__top-part--central-part--buttons-container__button"
               to="/women/homepage"
             >
               FOR HER
             </Link>
             <Link
-              className="directory-menu__top-part--central-part--buttons-container__button"
+              className="homepage-1st-section__top-part--central-part--buttons-container__button"
               to="/men/homepage"
             >
               FOR HIM
             </Link>
           </div>
 
-          <div className="directory-menu__top-part__lower">
-            <h1 className="directory-menu__top-part__lower--title">
-              <span className="directory-menu__top-part__lower--title__logo">
+          <div className="homepage-1st-section__top-part__lower">
+            <h1 className="homepage-1st-section__top-part__lower--title">
+              <span className="homepage-1st-section__top-part__lower--title__logo">
                 FEL!NA
               </span>
               <br />
-              <span className="directory-menu__top-part__lower--title__slogan">
+              <span className="homepage-1st-section__top-part__lower--title__slogan">
                 BE FIERCE, BE BOLD, BE YOU
               </span>
             </h1>
@@ -87,7 +87,7 @@ const Directory = (props) => {
 
         <img
           ref={images2Ref}
-          className="directory-menu__top-part--image directory-menu__top-part--image__man"
+          className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__man"
           src="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080/v1606857930/AdobeStock_367568464-min_sgxnoh.jpg"
           alt="men"
         />

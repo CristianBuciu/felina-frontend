@@ -1,11 +1,78 @@
-.category-section {
+.category-homepage {
   max-width: $width-general;
   position: relative;
+  padding: $page-padding;
 
   margin: 0rem auto;
   padding-top: 4rem;
+  height: calc(100vh - #{$navbar-height-desktop});
+
   @include respond(phone) {
     margin-top: 18rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+    // transform: translateY(-50%);
+    background-color: rgba($color: white, $alpha: 0.7);
+    backdrop-filter: blur(1rem);
+  }
+  &__title {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 6rem;
+
+    letter-spacing: 5px;
+    @include respond(phone) {
+      font-size: 8rem;
+      margin-bottom: 6rem;
+      color: white;
+    }
+  }
+  &__grid {
+    height: calc(100% - 10rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+  &__mobile-intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 4rem;
+    width: 90vw;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    );
+    backdrop-filter: blur(1rem);
+  }
+  &__mobile-card {
+    padding: 2rem 4rem;
+    background: rgba($color: white, $alpha: 0.9);
+    margin-bottom: 8rem;
+    &--title {
+      font-size: 6rem;
+    }
+    &--flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &--icon {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -31,18 +98,17 @@
   }
 }
 .directory-menu {
+  position: relative;
+  height: 100%;
+  &__top-part {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
   @include respond(phone) {
     margin-top: 4rem;
-  }
-  &__intro {
-    position: absolute;
-    top: 0%;
-    width: 50%;
-    height: calc(100% - 2rem);
-    @include respond(phone) {
-      height: calc(100% - 4rem);
-      margin-right: -2rem;
-      margin-left: -2rem;
-    }
+    flex-direction: column;
   }
 }

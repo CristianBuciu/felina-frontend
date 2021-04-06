@@ -16,6 +16,7 @@ import CategoryHomepage from "../category-homepage/CategoryHomepage";
 //! Additional packages
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { v4 as uuidv4 } from "uuid";
 
 function Men({ menLinkData, menShopData }) {
   //! Scroll gsap declaration
@@ -73,12 +74,37 @@ function Men({ menLinkData, menShopData }) {
               imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080/v1606857930/AdobeStock_367568464-min_sgxnoh.jpg"
               imgAlt="men"
               initialFlexPosition="flex-end"
-              className="directory-menu__top-part--image directory-menu__top-part--image__man"
-              style={{
-                left: "2rem",
-                backgroundImage:
-                  "linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(45, 45, 45, 0.6),rgba(87, 87, 87, 0.4), rgba(133, 133, 133, 0.2), rgba(182, 182, 182, 0.01))",
-              }}
+              className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__man"
+              introTitle="New Arrivals"
+              introLinks={[
+                {
+                  id: uuidv4(),
+                  title: "FEL!NA COLLECTION",
+                  route: "/men/new-arrivals/felina-collection",
+                  cName: "dropdown-links dropdown-links__important",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1GL55WDU90-JBLK",
+                  imageClassName: "most-wanted-image ",
+                },
+                {
+                  id: uuidv4(),
+                  title: "Denim Season",
+                  route: "/men/new-arrivals/denim-season",
+                  cName: "dropdown-links",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M1GXN1D4ED1-BDLD-ALT2",
+                  imageClassName: "most-wanted-image",
+                },
+                {
+                  id: uuidv4(),
+                  title: "Sustainable Style",
+                  route: "/men/new-arrivals/sustainable-style",
+                  cName: "dropdown-links ",
+                  imgSrc:
+                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/M0BH25WDA00-TWHT",
+                  imageClassName: "most-wanted-image",
+                },
+              ]}
             />
           )}
         />
