@@ -1,9 +1,10 @@
+//! Core
 import React from "react";
-
 import { NavLink } from "react-router-dom";
+import ReactDOM from "react-dom";
+
+//! Redux
 import { connect } from "react-redux";
-import CartItem from "../cart-item/CartItem";
-import { RiShoppingBagLine } from "react-icons/ri";
 import { createStructuredSelector } from "reselect";
 import {
   selectCartItems,
@@ -11,11 +12,17 @@ import {
   selectCartShow,
   selectCartItemsCount,
 } from "../../redux/cart/cart.selectors";
-
 import { toggleCartShow } from "../../redux/cart/cart.actions";
-import ReactDOM from "react-dom";
 
+//! Components
+import CartItem from "../cart-item/CartItem";
+
+//! Icons
+import { RiShoppingBagLine } from "react-icons/ri";
 import { RiCloseFill } from "react-icons/ri";
+
+//! Extra NPM Packages
+import { v4 as uuidv4 } from "uuid";
 
 const CartDropdown = ({
   route,
@@ -60,8 +67,8 @@ const CartDropdown = ({
               You have {itemCount} items in your shopping bag
             </h2>
             {cartItems.map((cartItem) => (
-              <div key={`a${cartItem.id}a`}>
-                <CartItem key={`a${cartItem.id}c`} item={cartItem} />
+              <div key={uuidv4()}>
+                <CartItem key={uuidv4()} item={cartItem} />
               </div>
             ))}
 

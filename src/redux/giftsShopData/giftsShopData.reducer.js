@@ -25,9 +25,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },
@@ -43,9 +43,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 20,
               },
             ],
           },
@@ -61,9 +61,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },
@@ -79,9 +79,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },
@@ -311,9 +311,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },
@@ -329,9 +329,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },
@@ -347,9 +347,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },
@@ -365,9 +365,9 @@ const INITIAL_STATE = {
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
               {
-                size: "universal size",
-                symbol: "universal size",
-                quantity: 0,
+                size: "T/U",
+                symbol: "T/U",
+                quantity: 10,
               },
             ],
           },

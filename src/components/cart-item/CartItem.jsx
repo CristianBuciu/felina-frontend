@@ -28,13 +28,16 @@ const CartItem = ({ item, clearItem }) => {
               {" "}
               <b>{quantity}</b>{" "}
             </span>
+            <span
+              onClick={() => clearItem(item)}
+              className="cart-item__delete-btn"
+            >
+              <RiDeleteBin6Line />{" "}
+              <b className="cart-item__delete-btn--text">Remove</b>
+            </span>
           </div>
         </div>
       </div>
-      <span onClick={() => clearItem(item)} className="cart-item__delete-btn">
-        <RiDeleteBin6Line />{" "}
-        <b className="cart-item__delete-btn--text">Remove</b>
-      </span>
     </div>
   );
 };

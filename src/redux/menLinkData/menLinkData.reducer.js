@@ -158,7 +158,7 @@ const INITIAL_STATE = [
         route: "/men/bags-accessories/belts",
         cName: "dropdown-links",
         imgSrc:
-          "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/BM7351VIN35-COA",
+          "https://cdn.shopify.com/s/files/1/0527/4789/4944/products/S8414AZ_20WN_BK27_01_02_1800x1800.jpg?v=1613750273",
         imageClassName: "most-wanted-image ",
       },
     ],

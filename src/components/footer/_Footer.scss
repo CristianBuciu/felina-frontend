@@ -17,12 +17,23 @@
     @include respond(phone) {
       margin-bottom: 0.5rem;
       margin-top: 2rem;
+      font-size: 4rem;
     }
   }
   &__text {
     font-size: 1.8rem;
     @include respond(phone) {
-      font-size: 2rem;
+      font-size: 3rem;
+    }
+  }
+  &__text-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    @include respond(phone) {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
     }
   }
 }

@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom";
 import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
 import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
 import CategoryHomepage from "../category-homepage/CategoryHomepage";
+import Product from "../product/Product";
 
 //! Redux
 import { connect } from "react-redux";
@@ -65,69 +66,81 @@ function Gifts({ giftsLinkData, giftsShopData }) {
         ))}
       </div>
 
-      <Switch>
-        <Route
-          exact
-          path="/gifts/homepage"
-          render={() => (
-            <CategoryHomepage
-              imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080,q_80/v1606860464/shutterstock_739730530-min_ojqmqf.jpg"
-              imgAlt="gifts"
-              initialFlexPosition="left"
-              className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__gifts"
-              introTitle="Accessories Gifts"
-              introLinks={[
-                {
-                  id: uuidv4(),
-                  title: "For Him",
-                  route: "/gifts/for-him/accessories",
-                  cName: "dropdown-links",
-                  imgSrc:
-                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/G0001252QQQ-08V",
-                  imageClassName: "most-wanted-image most-wanted-image__jacket",
-                },
-                {
-                  id: uuidv4(),
-                  title: "For Her",
-                  route: "/gifts/for-her/accessories",
-                  cName: "dropdown-links",
-                  imgSrc:
-                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/JUBE20055JW-GL-ALT1",
-                  imageClassName: "most-wanted-image ",
-                },
-              ]}
-            />
-          )}
-        />
-        {giftsShopData.forHer.subcategories.map((el) => (
+      <Route
+        exact
+        path="/gifts/homepage"
+        render={() => (
+          <CategoryHomepage
+            imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080,q_80/v1606860464/shutterstock_739730530-min_ojqmqf.jpg"
+            imgAlt="gifts"
+            initialFlexPosition="left"
+            className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__gifts"
+            introTitle="Accessories Gifts"
+            introLinks={[
+              {
+                id: uuidv4(),
+                title: "For Him",
+                route: "/gifts/for-him/accessories",
+                cName: "dropdown-links",
+                imgSrc:
+                  "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/G0001252QQQ-08V",
+                imageClassName: "most-wanted-image most-wanted-image__jacket",
+              },
+              {
+                id: uuidv4(),
+                title: "For Her",
+                route: "/gifts/for-her/accessories",
+                cName: "dropdown-links",
+                imgSrc:
+                  "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/JUBE20055JW-GL-ALT1",
+                imageClassName: "most-wanted-image ",
+              },
+            ]}
+          />
+        )}
+      />
+      {giftsShopData.forHer.subcategories.map((el) => (
+        <Switch key={el.id}>
           <Route
-            key={el.id}
             exact
             path={el.route}
-            render={() => (
+            render={(props) => (
               <CategoryDirectory
+                id={el.id}
                 subTitle={el.subTitle}
                 title={el.title}
                 items={el.items}
+                path={el.route}
               />
             )}
           />
-        ))}
-        {giftsShopData.forHim.subcategories.map((el) => (
           <Route
-            key={el.id}
+            path={`${el.route}/:id`}
+            render={() => <Product items={el.items} />}
+          />
+        </Switch>
+      ))}
+      {giftsShopData.forHim.subcategories.map((el) => (
+        <Switch key={el.id}>
+          <Route
             exact
             path={el.route}
-            render={() => (
+            render={(props) => (
               <CategoryDirectory
+                id={el.id}
                 subTitle={el.subTitle}
                 title={el.title}
                 items={el.items}
+                path={el.route}
               />
             )}
           />
-        ))}
-      </Switch>
+          <Route
+            path={`${el.route}/:id`}
+            render={() => <Product items={el.items} />}
+          />
+        </Switch>
+      ))}
     </>
   );
 }

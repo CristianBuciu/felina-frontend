@@ -2323,7 +2323,7 @@ const INITIAL_STATE = {
             price: 299.89,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/BM7351VIN35-COA",
+              "https://cdn.shopify.com/s/files/1/0527/4789/4944/products/S8414AZ_20WN_BK27_01_02_1800x1800.jpg?v=1613750273",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -2361,7 +2361,7 @@ const INITIAL_STATE = {
             price: 289.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/BM7318LEA35-BBN",
+              "https://lp.cosstores.com/app001prod?set=source[/aa/12/aa12245eec65655efba8369d8d9da0f1f85a559e.jpg],origin[dam],type[LOOKBOOK],device[hdpi],quality[80],ImageVersion[1]&call=url[file:/product/zoom]",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -2399,7 +2399,7 @@ const INITIAL_STATE = {
             price: 399.9,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/BM7313LEA35-BLA",
+              "https://lp.cosstores.com/app001prod?set=source[01_0729448_001_1],type[ECOMLOOK],device[hdpi],quality[80],ImageVersion[201907231505]&call=url[file:/product/zoom]",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -2437,7 +2437,7 @@ const INITIAL_STATE = {
             price: 315.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/BM7305LEA35-BLA",
+              "https://lp.cosstores.com/app001prod?set=source[/b6/46/b646a1680ebc2befeea9c34c3b1add9f8a9e42ad.jpg],origin[dam],type[LOOKBOOK],device[hdpi],quality[80],ImageVersion[1]&call=url[file:/product/zoom]",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [

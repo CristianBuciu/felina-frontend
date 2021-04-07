@@ -12,6 +12,7 @@ import { selectKidsShopData } from "../../redux/kidsShopData/kidsShopData.select
 import DropdownCustomMenu from "../../components/dropdown-menu/DropdownCustomMenu";
 import CategoryHomepage from "../category-homepage/CategoryHomepage";
 import CategoryDirectory from "../../components/category-directory/CategoryDirectory";
+import Product from "../product/Product";
 
 //! Extra npm packages
 import { Spring } from "react-spring/renderprops.cjs";
@@ -67,69 +68,81 @@ function Kids({ kidsLinkData, kidsShopData }) {
         ))}
       </div>
 
-      <Switch>
-        <Route
-          exact
-          path="/kids/homepage"
-          render={() => (
-            <CategoryHomepage
-              imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080/v1606941388/AdobeStock_177246524-min_aizq8f.jpg"
-              imgAlt="kids"
-              initialFlexPosition="center"
-              className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__kids"
-              introTitle="Junior Collection"
-              introLinks={[
-                {
-                  id: uuidv4(),
-                  title: "For girls",
-                  route: "/kids/girls/junior",
-                  cName: "dropdown-links",
-                  imgSrc:
-                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/J1GI24K6YW1-C448",
-                  imageClassName: "most-wanted-image ",
-                },
-                {
-                  id: uuidv4(),
-                  title: "For boys",
-                  route: "/kids/boys/junior",
-                  cName: "dropdown-links",
-                  imgSrc:
-                    "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/L1RN03WDO30-DEKB",
-                  imageClassName: "most-wanted-image most-wanted-image__jacket",
-                },
-              ]}
-            />
-          )}
-        />
-        {kidsShopData.boys.subcategories.map((el) => (
+      <Route
+        exact
+        path="/kids/homepage"
+        render={() => (
+          <CategoryHomepage
+            imgSrc="https://res.cloudinary.com/c1oud9/image/upload/c_scale,h_1080/v1606941388/AdobeStock_177246524-min_aizq8f.jpg"
+            imgAlt="kids"
+            initialFlexPosition="center"
+            className="homepage-1st-section__top-part--image homepage-1st-section__top-part--image__kids"
+            introTitle="Junior Collection"
+            introLinks={[
+              {
+                id: uuidv4(),
+                title: "For girls",
+                route: "/kids/girls/junior",
+                cName: "dropdown-links",
+                imgSrc:
+                  "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/J1GI24K6YW1-C448",
+                imageClassName: "most-wanted-image ",
+              },
+              {
+                id: uuidv4(),
+                title: "For boys",
+                route: "/kids/boys/junior",
+                cName: "dropdown-links",
+                imgSrc:
+                  "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/L1RN03WDO30-DEKB",
+                imageClassName: "most-wanted-image most-wanted-image__jacket",
+              },
+            ]}
+          />
+        )}
+      />
+      {kidsShopData.boys.subcategories.map((el) => (
+        <Switch key={el.id}>
           <Route
-            key={el.id}
             exact
             path={el.route}
-            render={() => (
+            render={(props) => (
               <CategoryDirectory
+                id={el.id}
                 subTitle={el.subTitle}
                 title={el.title}
                 items={el.items}
+                path={el.route}
               />
             )}
           />
-        ))}
-        {kidsShopData.girls.subcategories.map((el) => (
           <Route
-            key={el.id}
+            path={`${el.route}/:id`}
+            render={() => <Product items={el.items} />}
+          />
+        </Switch>
+      ))}
+      {kidsShopData.girls.subcategories.map((el) => (
+        <Switch key={el.id}>
+          <Route
             exact
             path={el.route}
-            render={() => (
+            render={(props) => (
               <CategoryDirectory
+                id={el.id}
                 subTitle={el.subTitle}
                 title={el.title}
                 items={el.items}
+                path={el.route}
               />
             )}
           />
-        ))}
-      </Switch>
+          <Route
+            path={`${el.route}/:id`}
+            render={() => <Product items={el.items} />}
+          />
+        </Switch>
+      ))}
     </div>
   );
 }

@@ -40,15 +40,6 @@ const PopUpModal = (props) => {
 
   return (
     <div>
-      <button
-        onClick={() => {
-          setModal(true);
-          openModalHelper();
-        }}
-        className="category-directory__card--link"
-      >
-        ADD TO CART
-      </button>
       <Transition
         items={showModal}
         from={{ transform: "scale(0.2) translateX(-50%)", opacity: 0 }}

@@ -1,11 +1,15 @@
+//! Core
 import React, { useState, Fragment } from "react";
+import { Link, Route, withRouter, useHistory } from "react-router-dom";
+
+//! Icons
 import { BiGridSmall, BiGridHorizontal } from "react-icons/bi";
-import { Link, Route, Switch, withRouter } from "react-router-dom";
 
-import PopUpModal from "../pop-up-modal/PopUpModal";
-
+//! Components
+import Product from "../../pages/product/Product";
 //! =============================================================================
-const CategoryDirectory = ({ items, title, subTitle, match }) => {
+const CategoryDirectory = ({ items, path, title, subTitle }) => {
+  const history = useHistory();
   const [selectSmall, setSelectSmall] = useState(false);
   const [selectBig, setSelectBig] = useState(true);
 
@@ -98,11 +102,12 @@ const CategoryDirectory = ({ items, title, subTitle, match }) => {
                   </div>
                 </div>
 
-                <PopUpModal
-                  key={item.id}
-                  item={item}
-                  size={item.availableSize}
-                />
+                <Link
+                  to={`${path}/${item.id}`}
+                  className="category-directory__card--button"
+                >
+                  ADD TO CART
+                </Link>
               </div>
             </div>
           </Fragment>

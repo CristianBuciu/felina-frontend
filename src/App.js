@@ -1,24 +1,24 @@
+//! Core
 import React, { Component } from "react";
-
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import { connect } from "react-redux";
-
+//! Components
 import HomePage from "./pages/homepage/homepage.component.jsx";
-
 import Header from "./components/header/header.component";
 import Women from "./pages/women/Women";
 import Men from "./pages/men/Men";
 import Kids from "./pages/kids/Kids";
 import Gifts from "./pages/gifts/Gifts";
 import Checkout from "./pages/checkout/Checkout.jsx";
-
 import Register from "./pages/register/Register";
 import Footer from "./components/footer/footer.component";
+
+//! Redux
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
+import { connect } from "react-redux";
 class App extends Component {
   unsubscribeFromAuth = null;
 

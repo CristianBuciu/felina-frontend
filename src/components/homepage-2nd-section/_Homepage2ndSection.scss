@@ -23,8 +23,9 @@
   }
   &__title-male {
     z-index: 3;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSko7WtdyrdctshCOoWRzGcH-wMIIJ9R8zXHQ&usqp=CAU);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jwjNQbK_7kpjVz4X_TdHUHS94SpcLD_D7w&usqp=CAU);
     -webkit-background-clip: text;
+    background-clip: text;
 
     font-family: $font-headers;
     position: absolute;
@@ -55,8 +56,9 @@
   }
   &__title-female {
     z-index: 3;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSko7WtdyrdctshCOoWRzGcH-wMIIJ9R8zXHQ&usqp=CAU);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jwjNQbK_7kpjVz4X_TdHUHS94SpcLD_D7w&usqp=CAU);
     -webkit-background-clip: text;
+    background-clip: text;
     padding-left: 1rem;
     font-family: $font-headers;
     position: absolute;
