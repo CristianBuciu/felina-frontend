@@ -1,23 +1,34 @@
+//! Core
 import React, { useRef, useEffect } from "react";
+
+//! Redux
 import { connect } from "react-redux";
-import OptionLink from "../option-links/OptionLink";
-import nextId from "react-id-generator";
 import { createStructuredSelector } from "reselect";
+import { selectCartShow } from "../../redux/cart/cart.selectors";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
+
+//! Components
+import OptionLink from "../option-links/OptionLink";
 import Sidebar from "../sidebar/Sidebar";
 import CartIcon from "../cart-icon/CartIcon";
 import CartDropdown from "../cart-dropdown/CartDropdown";
-import { RiUser3Fill, RiUserAddLine, RiShoppingBagLine } from "react-icons/ri";
-import logo from "../../assets/cat.png";
+
+//! Utils
+import nextId from "react-id-generator";
 import { headerLinks } from "./headerLinks";
 import { NavLink } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
-import { selectCartShow } from "../../redux/cart/cart.selectors";
-import { selectCurrentUser } from "../../redux/user/user.selectors";
-import { Transition } from "react-spring/renderprops.cjs";
+
+//! Additional npm packages
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Transition } from "react-spring/renderprops.cjs";
+
+//! Assets
+import logo from "../../assets/cat.png";
 
 //! Icons
+import { RiUser3Fill, RiUserAddLine, RiShoppingBagLine } from "react-icons/ri";
 
 //! =============================================================================
 const Header = ({ currentUser, showCart }) => {
