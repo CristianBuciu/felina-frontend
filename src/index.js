@@ -11,7 +11,7 @@ import { store, persistor } from "./redux/store";
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <Router >
       <ScrollToTop />
       <PersistGate persistor={persistor}>
         <App />
