@@ -18,7 +18,7 @@ const INITIAL_STATE = {
             title: "SWEATER CUT-OUTS",
             price: 199.99,
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BGR045590Z-G1BA",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326609/felina/woman-felina-collection/0BGR045590Z-G1BA_pw1kx0.jpg",
 
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
@@ -57,7 +57,7 @@ const INITIAL_STATE = {
             price: 99.9,
             quantity: 99,
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG5045613Z-JBLK",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326635/felina/woman-felina-collection/0BG5045613Z-JBLK_f7rny0.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -95,7 +95,7 @@ const INITIAL_STATE = {
             price: 150.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG5125608Z-G1CH",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326659/felina/woman-felina-collection/1GG5125608Z-G1CH_er3tg7.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -133,7 +133,7 @@ const INITIAL_STATE = {
             price: 130.9,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7006063A-P49S-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326687/felina/woman-felina-collection/1GG7006063A-P49S-ALT1_wlbkne.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -171,7 +171,7 @@ const INITIAL_STATE = {
             price: 185.9,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/GM081057QQQ-01B",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326710/felina/woman-felina-collection/GM081057QQQ-01B_cxvaci.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -209,7 +209,7 @@ const INITIAL_STATE = {
             price: 250.9,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG1559531Z-F6T9-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326740/felina/woman-felina-collection/1GG1559531Z-F6T9-ALT1_rvr6vo.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -247,7 +247,7 @@ const INITIAL_STATE = {
             price: 119.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG6046059A-G1CH",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326765/felina/woman-felina-collection/1GG6046059A-G1CH_vye2gb.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -285,7 +285,7 @@ const INITIAL_STATE = {
             price: 139.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG6196063A-P49S",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326801/felina/woman-felina-collection/1GG6196063A-P49S_wuhbyy.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -332,7 +332,7 @@ const INITIAL_STATE = {
             price: 119.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GK17D4CS1-PIN1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326859/felina/woman-denim-season/W1GK17D4CS1-PIN1_rw1cop.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -369,7 +369,7 @@ const INITIAL_STATE = {
             price: 109.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RK0PD14LN-IMGN",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326946/felina/woman-denim-season/W1RK0PD14LN-IMGN_sd9nxc.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -407,7 +407,7 @@ const INITIAL_STATE = {
             price: 79.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG1539340Z-BRWA-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621326975/felina/woman-denim-season/0BG1539340Z-BRWA-ALT1_beturw.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -445,7 +445,7 @@ const INITIAL_STATE = {
             price: 105.55,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0BA09D3Y0A-MYFA-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327008/felina/woman-denim-season/W0BA09D3Y0A-MYFA-ALT1_gadunl.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -483,7 +483,7 @@ const INITIAL_STATE = {
             price: 109.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1GA27R49T0-MNCB-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327040/felina/woman-denim-season/W1GA27R49T0-MNCB-ALT1_wy8fit.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -521,7 +521,7 @@ const INITIAL_STATE = {
             price: 79.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/WBYGJ2R49T4-GVLW",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327075/felina/woman-denim-season/WBYGJ2R49T4-GVLW_ssqeuj.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -559,7 +559,7 @@ const INITIAL_STATE = {
             price: 149.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W1RA46D4AO2-WFLO-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327106/felina/woman-denim-season/W1RA46D4AO2-WFLO-ALT1_gvsuan.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -597,7 +597,7 @@ const INITIAL_STATE = {
             price: 105.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/W0RA12R4AS0-GODB-ALT3",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327141/felina/woman-denim-season/W0RA12R4AS0-GODB-ALT3_ihyh2x.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -643,7 +643,7 @@ const INITIAL_STATE = {
             price: 179.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GSK178080Z-G1CR",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327838/felina/woman-sustainable/1GSK178080Z-G1CR_zpgr49.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -681,7 +681,7 @@ const INITIAL_STATE = {
             price: 149.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/0BG7785012Z-G1AC",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327872/felina/woman-sustainable/0BG7785012Z-G1AC_uxrlxd.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -719,7 +719,7 @@ const INITIAL_STATE = {
             price: 240.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7289543Z-F1Y8-ALT1",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327908/felina/woman-sustainable/1GG7289543Z-F1Y8-ALT1_apbu4g.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
@@ -757,7 +757,7 @@ const INITIAL_STATE = {
             price: 199.99,
 
             imgSrc:
-              "https://img.guess.com/image/upload/f_auto,q_auto,fl_strip_profile,e_sharpen:50,,w_1024,c_scale/v1/EU/Style/ECOMM/1GG7429529Z-TWHM",
+              "https://res.cloudinary.com/c1oud9/image/upload/v1621327956/felina/woman-sustainable/1GG7429529Z-TWHM_sm6ps9.jpg",
             description:
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum quia sed ea consequatur eos quam, in vel! Esse nobis sed voluptatibus iure ipsum odit.  ",
             availableSize: [
