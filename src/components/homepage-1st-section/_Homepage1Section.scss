@@ -76,13 +76,17 @@
         z-index: 3;
         background-color: rgba($color: $color-border, $alpha: 0.95);
         padding: 2rem;
+        border-radius: 15% 0 15% 0;
       }
 
       &__logo {
         width: 10rem;
+
         @include respond(phone) {
           margin-top: -15rem;
           width: 15rem;
+          filter: drop-shadow(3px 3px 0rem rgba(255, 255, 255, 1))
+            drop-shadow(-3px -3px 0rem rgba(255, 255, 255, 1));
         }
       }
       &__text {
