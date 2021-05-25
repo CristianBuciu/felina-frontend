@@ -21,6 +21,8 @@
     // transform: translateY(-50%);
     background-color: rgba($color: white, $alpha: 0.7);
     backdrop-filter: blur(1rem);
+    border-radius: 50% 25% 0 0;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.1));
   }
   &__title {
     margin-top: 4rem;
@@ -57,6 +59,7 @@
       rgba(0, 0, 0, 0.3)
     );
     backdrop-filter: blur(1rem);
+    border-radius: 15% 0 15% 0;
   }
   &__mobile-card {
     padding: 2rem 4rem;

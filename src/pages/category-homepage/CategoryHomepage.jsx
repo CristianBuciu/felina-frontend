@@ -70,7 +70,6 @@ const CategoryHomepage = ({
                           <h1 className="category-homepage__mobile-card--title">
                             {el.title}
                           </h1>
-                          <GiClick className="category-homepage__mobile-card--icon" />
                         </div>
                       </div>
                     ))}
